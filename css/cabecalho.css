@@ -35,18 +35,18 @@ a {
     margin-right: 50px;
   }
   
-  .mobile-menu {
+  /* .mobile-menu {
     display: none;
     cursor: pointer;
-  }
+  } */
   
-  .mobile-menu div {
+  /* .mobile-menu div {
     width: 32px;
     height: 2px;
     background: #fff;
     margin: 8px;
     transition: 0.3s;
-  }
+  } */
   
   .cliente {
     margin-right: 100px
