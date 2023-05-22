@@ -1,42 +1,246 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dw Solutions</title>
-
-    <!-- LINKS -->
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/1c54520e81.js" crossorigin="anonymous"></script>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>DW Solutions</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/android-chrome-192x192.png">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/cabecalho.css" rel="stylesheet">
+    <link href="css/chamada.css" rel="stylesheet">
+    <link href="css/destaques.css" rel="stylesheet">
+    <link href="css/diferenciais.css" rel="stylesheet">
+    <link href="css/sobre.css" rel="stylesheet">
+    <link href="css/planos.css" rel="stylesheet">
+    <link href="css/contato.css" rel="stylesheet">
+    <link href="css/institucional.css" rel="stylesheet">
+    <link href="css/rodape.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="nav" class="">
-        <div class="container flex">
-            <img src="img/dwlogo2.png" />
-            <div class="links">
-                <a href="#home">HOME</a>
-                <a href="#empresa">EMPRESA</a>
-                <a href="#planos">PLANOS</a>
-                <a href="#contato">CONTATO</a>
-                <button class="cliente"><i class="fa-solid fa-rocket-launch"></i>ÁREA DO CLIENTE</button>
+    <header id="home">
+        <nav>
+            <a class="logo" href="#home"><img src="../img/dwlogo2.png" alt=""></a>
+            <!-- <div class="mobile-menu">
+                <div class="line1">ola</div>
+                <div class="line2">style</div>
+                <div class="line3">eisso</div>
+              </div> -->
+            <ul class="nav-list">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#empresa">Empresa</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="cliente">
+                <a href="#" class="btn">
+                    <span class="btn__circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="34" viewBox="0 0 24 24" fill="none"
+                            stroke="#42ab1c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </span>
+                    <span class="btn__white-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="icon-arrow-right" viewBox="0 0 21 12">
+                            <path
+                                d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="btn__text">Área do Cliente</span>
+                </a>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main>
-        <section id="home" class="banner">
-            <img src="img/imgdw.jpg" alt="">
+        <section class="chamada container">
+            <h1 class="chamada__titulo">Seja Bem Vindo a <br> DW Solutions</h1>
+            <p class="chamada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt saepe.</p>
+            <a href="#planos" class="chamada__botao botao">Conheça os planos</a>
         </section>
-        <section id="empresa" class="empresa"></section>
-        <section id="planos" class="planos"></section>
-        <section id="contato" class="contato"></section>
+        <section id="destaques" class="destaques container">
+            <!-- <h2 class="destaques__titulo">Destaques</h2> -->
+            <div class="destaques__painel">
+                <a href="#planos">
+                    <figure class="destaques__link link1">
+                        <img src="img/dwsolutionsinternet-20230520-0001.jpg" alt="" class="destaques__painel-imagem">
+                        <!-- <figcaption class="destaques__painel-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption> -->
+                    </figure>
+                </a>
+                <a href="#planos">
+                    <figure class="destaques__link">
+                        <img src="img/dwsolutionsinternet-20230520-0002.jpg" alt="" class="destaques__painel-imagem">
+                        <!-- <figcaption class="destaques__painel-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption> -->
+                    </figure>
+                </a>
+                <a href="#planos">
+                    <figure class="destaques__link link3">
+                        <img src="img/dwsolutionsinternet-20230520-0003.jpg" alt="" class="destaques__painel-imagem">
+                        <!-- <figcaption class="destaques__painel-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption> -->
+                    </figure>
+                </a>
+            </div>
+            <a href="#" class="destaques__botao botao">Receber destaques por email</a>
+        </section>
+        <section id="empresa" class="sobre container">
+            <div class="sobre__conteudo">
+                <h2 class="sobre__titulo">Sobre Nós</h2>
+                <p class="sobre__texto">
+                    A DW Solutions atua com serviços de internet Banda Larga em diversos bairros de Simões Filho,
+                    levando qualidade e tecnologia para seus usuários.
+                    Atendimento de excelência, respeito e agilidade, são marcas registradas
+                </p>
+                <p class="sobre__texto sobre__texto--destaque sobre__texto--divisao">
+                    Conte com uma equipe especializada e exclusiva pra projetos incríveis em qualquer plataforma.
+                </p>
+                <!-- <ul class="sobre__plataformas">
+                        <li><img src="img/android.png" alt="Ícone do Android"></li>
+                        <li><img src="img/blackberry.png" alt="Ícone da Blackberry"></li>
+                        <li><img src="img/apple.png" alt="Ícone da Apple"></li>
+                        <li><img src="img/windowsphone.png" alt="Ícone da Microsoft"></li>
+                    </ul>
+                    <p class="sobre__texto">Desenvolvemos aplicativos para todas as plataformas</p> -->
+            </div>
+            <ul class="diferenciais__lista">
+                <li class="diferenciais__item diferenciais__item--tempo">
+                    <h2 class="item__titulo">NOSSA MISSÃO</h2>
+                    <p class="item__texto">Atuar no setor de telecomunicações com responsabilidade social e ambiental,
+                        fornecendo serviços na integração e manutenção à rede mundial de computadores, com excelência.
+                    </p>
+                </li>
+                <li class="diferenciais__item diferenciais__item--foco">
+                    <h2 class="item__titulo">NOSSA VISÃO</h2>
+                    <p class="item__texto">Ser referência no setor de telecomunicações, gerando rentabilidade compatível
+                        com o investimento realizado</p>
+                </li>
+                <li class="diferenciais__item diferenciais__item--especialistas">
+                    <h2 class="item__titulo">VALORES</h2>
+                    <p class="item__texto">- Integração entre profissionais, clientes e fornecedores; <br>
+                        - Prontidão para mudanças, visando melhoria continua; <br>
+                        - Respeito a vida, buscamos a excelência em segurança, meio ambiente e saúde; <br>
+                        - Ética e transparência nos nossos negócios.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="planos" class="planos container">
+            <div class="cards">
+                <div class="data-card">
+                    <h3>50 Mbps</h3>
+                    <h4>R$69,90 Mensal</h4>
+                    <p>
+                        Download: 50Mbps <br>
+                        Franquia Ilimitada <br>
+                        Upload Sob Consulta
+                    </p>
+                    <a href="#" class="link-text">
+                        Assine Agora
+                        <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                                fill="var(--fonte-preta)" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="data-card">
+                    <h3>300 Mbps</h3>
+                    <h4>R$99,90 Mensal</h4>
+                    <p>
+                        Download: 300Mbps <br>
+                        Franquia Ilimitada <br>
+                        Upload Sob Consulta
+                    </p>
+                    <a href="#" class="link-text">
+                        Assine Agora
+                        <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                                fill="var(--fonte-preta)" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="data-card">
+                    <h3>400 Mbps</h3>
+                    <h4>R$119,90 Mensal</h4>
+                    <p>
+                        Download: 400Mbps <br>
+                        Franquia Ilimitada <br>
+                        Upload Sob Consulta
+                    </p>
+                    <a href="" class="link-text">
+                        Assine Agora
+                        <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                                fill="var(--fonte-preta)" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="data-card">
+                    <h3>500 Mbps</h3>
+                    <h4>R$149,90 Mensal</h4>
+                    <p>
+                        Download: 500Mbps <br>
+                        Franquia Ilimitada <br>
+                        Upload Sob Consulta
+                    </p>
+                    <a href="" class="link-text">
+                        Assine Agora
+                        <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+                                fill="var(--fonte-preta)" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="contato container">
+            <h2 class="contato__titulo">Contato</h2>
+            <p>Entre em contato com a gente</p>
+            <a href="contato.html" class="contato__botao botao">Entre em contato</a>
+        </section>
+        <section class="institucional container">
+            <h2 class="institucional__titulo">Institucional</h2>
+            <div class="institucional__conteudo">
+                <div class="institucional__informacoes">
+                    <p class="institucional__descricao">Um pouco mais sobre a DW</p>
+                    <address class="institucional__endereco">
+                        Endereço Aqui
+                        <article class="institucional__contato">
+                            <p><a href="tel:+557131992109" class="institucional__contato-telefone">(71) 3199-2109</a> ou
+                                <a href="mailto:contatos@dwsolutions.com.br"
+                                    class="institucional__contato-email">contatos@dwsolutions.com.br</a>
+                            </p>
+                        </article>
+                    </address>
+                </div>
+                <!-- <video src="img/formacao-java.mp4" class="institucional__video" controls></video> -->
+            </div>
+        </section>
     </main>
-    <a id="back-to-top" href="#">👆🏼</a>
-    <script src="main.js"></script>
+    <footer class="rodape container">
+        <img src="../img/LOGO-DW-SOLUTIONS-Whats.png" alt="Logo da Apeperia" class="rodape__logo">
+        <ul class="rodape__social">
+            <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="Ícone do Facebook"></a></li>
+            <li><a href="#" class="rodape__midia"><img src="img/twitter.png" alt="Ícone do twitter"></a></li>
+            <li><a href="#" class="rodape__midia"><img src="img/instagram.png" alt="Ícone do Instagram"></a></li>
+        </ul>
+        <ul class="rodape__navegacao">
+            <li class="rodape__link"><a href="#home">Início</a></li>
+            <li class="rodape__link"><a href="#destaques">Destaques</a></li>
+            <li class="rodape__link"><a href="#empresa">Empresa</a></li>
+            <li class="rodape__link"><a href="#planos">Planos</a></li>
+            <li class="rodape__link"><a href="#contato">Contato</a></li>
+        </ul>
+        <p class="copy">Copyright DW Solutions 2014. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
