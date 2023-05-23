@@ -1,5 +1,5 @@
 .destaques {
-    background-color: var(--azul-claro);
+    background-color: var(--cinza-claro);
 
     padding-top: 2.5rem;
     padding-bottom: 2rem;
@@ -61,4 +61,12 @@
     .destaques {
         height: 96vh;
     }
+}
+
+.destaques__link {
+    transition: 300ms;
+}
+
+.destaques__link:hover {
+    scale: .95;
 }

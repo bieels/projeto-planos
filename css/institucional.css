@@ -8,6 +8,8 @@
 
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    background: var(--bg-branco);
 }
 
 .institucional__titulo {
@@ -49,7 +51,7 @@
     display: block;
 }
 
-.institucional__video {
+.institucional__ {
     width: 100vw;
 }
 
@@ -58,7 +60,7 @@
         display: inline-block;
     }
 
-    .institucional__video {
+    .institucional__ {
         width: 100%;
     }
 }
@@ -73,7 +75,7 @@
         text-align: left;
     }
 
-    .institucional__video {
+    .institucional__ {
         align-self: flex-end;
         
         width: 375px;

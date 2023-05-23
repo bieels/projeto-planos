@@ -1,20 +1,20 @@
 :root {
     --branco: #FFF;
     --preto: #000;
-    --azul-claro: #DFE3E5;
+    --cinza-claro: #DFE3E5;
     --vermelho-forte: #B72E2E;
     --cinza-escuro: #4F4C4C;
-    --cinza-claro: #F7F4F4;
     --cinza-medio: #D9D9D9;
     --verde-dw: #42ab1c;
+    --plano-branco: #FFF;
         
     --fonte-link: #0084FF;
     --fonte-cinza: #667;
     --fonte-preta: #000000;
-    --borda-cabecalho-mobile: #103D4A;
     --bg-rodape: #000000;
     --bg-chamada-mobile: #000000;
     --bg-nav: #000000;
+    --bg-branco: #FFF;
     
     --planos-cartao-start: #56CCF2;
     --planos-cartao-ultra: #B04CD9;
@@ -23,9 +23,19 @@
     --montserrat: 'Montserrat', sans-serif;
 }
 
+body.dark {
+  --bg-branco: #000000;
+  --cinza-claro: #131313;
+  --cinza-escuro: #a5a5a5;
+  --bg-black-50: #393939;
+  --fonte-preta: #ffffff;
+  --bg-rodape: #131313;
+  --plano-branco: #3b3b3b;
+}
+
 * {
     scroll-behavior: smooth;
-    
+        
 }
 
 body {

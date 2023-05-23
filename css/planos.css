@@ -12,9 +12,10 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  border: .75em solid white;
+  /* border: .75em solid white; */
   padding: 2em;
   font-family: 'Open Sans', sans-serif;
+
 }
 
 
@@ -35,7 +36,7 @@
   overflow: hidden;
   border-radius: .5em;
   text-decoration: none;
-  background: white;
+  background: var(--plano-branco);
   margin: 1em;
   padding: 2.75em 2.5em;
   box-shadow: 0 2px 10px 5px #0000002f;
@@ -43,7 +44,7 @@
 }
 
 .data-card h3 {
-  color: #2E3C40;
+  color: var(--fonte-preta);
   font-size: 3em;
   font-weight: 600;
   line-height: 1;
@@ -54,7 +55,7 @@
 }
 
 .data-card h4 {
-  color: #627084;
+  color: var(--fonte-preta);
   text-transform: uppercase;
   font-size: 1.125em;
   font-weight: 700;
@@ -69,7 +70,6 @@
   color: var(--fonte-preta);
   font-weight: 600;
   line-height: 1.8;
-  margin: 0 0 1.25em;
   transform: translateY(-1em);
   transition: opacity .45s ease, transform .5s ease;
 }

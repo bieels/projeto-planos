@@ -14,10 +14,9 @@
 }
 
 .rodape__midia {
-    display: block;
 
-    width: 42px;
-    height: 42px;
+    width: 24px;
+    height: 24px;
 
     margin: 2rem 1rem;
 }
@@ -30,7 +29,9 @@
 
 .rodape__logo {
     width: 80px;
-    padding-right: 100px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    
 }
 
 .copy {
@@ -42,7 +43,7 @@
     display: inline-block;
 
     margin: 0 .5rem .7rem;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -56,5 +57,19 @@
         text-align: left;
 
         min-width: 600px;
+    }
+
+    .rodape__logo {
+        margin-right: 40px;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .rodape__link {
+        font-size: 15px;
+    }
+    .copy {
+        font-size: 10px;
     }
 }

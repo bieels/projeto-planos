@@ -1,6 +1,7 @@
 .sobre {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    background: var(--bg-branco);
 
     display: flex;
     flex-direction: column;
@@ -22,6 +23,10 @@
     line-height: normal;
     font-size: 1.4rem;
     margin-bottom: 3rem;
+}
+
+.sobre__conteudo p{
+    color: var(--fonte-cinza);
 }
 
 .sobre__texto--destaque {

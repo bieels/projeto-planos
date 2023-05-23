@@ -7,8 +7,14 @@
 
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    background: var(--bg-branco);
+    transition: color .45s ease;
 }
 
+.contato p{
+    color: var(--cinza-escuro);
+}
 .contato__titulo {
     color: var(--cinza-escuro);
     font-weight: 700;
