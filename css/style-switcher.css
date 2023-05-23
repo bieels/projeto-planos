@@ -18,7 +18,7 @@
   background: var(--bg-black-100);
   color: var(--skin-color);
   right: 100%;
-  border: 1px solid var(--bg-black-50);
+  /* border: 1px solid var(--bg-black-50); */
   margin-right: 25px;
   cursor: pointer;
   transition: all 0.8s ease;
