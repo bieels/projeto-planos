@@ -17,7 +17,7 @@
   background: var(--bg-black-100);
   color: var(--branco);
   right: 100%;
-  border: 3px solid var(--branco); 
+  border: 1px solid var(--branco);
   margin-right: 25px;
   cursor: pointer;
   transition: all 0.8s ease;
@@ -28,11 +28,20 @@
   line-height: 40px;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .style-switcher {
-    left: 280px;
-    bottom: 220px;
+    bottom: 30px;
+    margin-left: 90px;
   }
 }
 
+@media (max-width: 500px) {
+  .style-switcher {
+    left: 200px;
+    bottom: 290px;
+  }
+  .style-switcher .s-icon {
+    border: none;    
+  }
+}
 
