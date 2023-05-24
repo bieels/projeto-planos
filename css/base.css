@@ -16,9 +16,9 @@
     --bg-nav: #000000;
     --bg-branco: #FFF;
     
-    --planos-cartao-start: #56CCF2;
-    --planos-cartao-ultra: #B04CD9;
-    --planos-cartao-mega: #E33B3B;
+    --shadow-section1: rgba(41, 41, 41, 0.247);
+    --shadow-section2: rgba(48, 48, 48, 0.212);
+
 
     --montserrat: 'Montserrat', sans-serif;
 }
@@ -30,17 +30,23 @@ body.dark {
   --bg-black-50: #393939;
   --fonte-preta: #ffffff;
   --bg-rodape: #131313;
-  --plano-branco: #3b3b3b;
+  --plano-branco: #000000;
+  --shadow-section1: rgba(39, 39, 39, 0.308);
+  --shadow-section2: rgba(0, 0, 0, 0.336);
 }
 
 * {
     scroll-behavior: smooth;
-        
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;       
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 
 .container {
     padding-right: 6%;

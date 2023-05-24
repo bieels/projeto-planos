@@ -7,6 +7,8 @@
 
     padding-top: 2.5rem;
     padding-bottom: 2rem;
+    box-shadow: 0px 1px 80px 10px var(--shadow-section1);
+    transition: transform .45s ease, background .45s ease;
 }
 
 .rodape__social {
@@ -59,10 +61,6 @@
         min-width: 600px;
     }
 
-    .rodape__logo {
-        margin-right: 40px;
-        padding-right: 0;
-    }
 }
 
 @media (max-width: 800px) {
@@ -71,5 +69,8 @@
     }
     .copy {
         font-size: 10px;
+    }
+    .rodape__logo {
+        margin-left: 50px;
     }
 }

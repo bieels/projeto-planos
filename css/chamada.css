@@ -10,6 +10,7 @@
 
     padding-top: 12.25rem;
     padding-bottom: 2.5rem;
+    transition: transform .45s ease, background .45s ease;
 }
 
 .chamada__titulo {

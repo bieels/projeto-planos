@@ -15,7 +15,8 @@
   /* border: .75em solid white; */
   padding: 2em;
   font-family: 'Open Sans', sans-serif;
-
+  box-shadow: 0px 1px 50px 10px var(--shadow-section1);
+  transition: transform .45s ease, background .45s ease;
 }
 
 

@@ -10,6 +10,8 @@
 
     background: var(--bg-branco);
     transition: color .45s ease;
+    box-shadow: 0px 1px 50px 10px var(--shadow-section2);
+    transition: transform .45s ease, background .45s ease;
 }
 
 .contato p{

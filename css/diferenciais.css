@@ -1,6 +1,7 @@
 .diferenciais {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+    transition: transform .45s ease, background .45s ease;
 }
 
 .diferenciais__lista {
@@ -14,22 +15,13 @@
 
     box-sizing: border-box;
 
-    background-repeat: no-repeat;
-    background-position: top 1.25rem left 2.5rem;
 
-    padding: 2rem 0 2rem 5rem;
+
+    padding: 2rem 2rem 2rem 2rem;
 }
 
-.diferenciais__item--tempo {
-    background-image: url(../../img/file.svg);
-}
-
-.diferenciais__item--foco {
-    background-image: url(../../img/eye.svg);
-}
-
-.diferenciais__item--especialistas {
-    background-image: url(../../img/database.svg);
+.diferenciais svg {
+    margin-right: 5px;
 }
 
 .item__titulo {
