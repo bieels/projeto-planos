@@ -9,6 +9,7 @@
     padding-bottom: 2rem;
     box-shadow: 0px 1px 80px 10px var(--shadow-section1);
     transition: transform .45s ease, background .45s ease;
+    list-style: none;
 }
 
 .rodape__social {
