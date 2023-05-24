@@ -37,11 +37,10 @@
 
 @media (max-width: 500px) {
   .style-switcher {
-    left: 200px;
-    bottom: 290px;
+    left: 150px;
+    
+    bottom: 300px;
   }
-  .style-switcher .s-icon {
-    border: none;    
-  }
+
 }
 
