@@ -11,6 +11,11 @@
     transition: transform .45s ease, background .45s ease;
 }
 
+.rodape a {
+    font-family: Lato, sans-serif;
+    text-transform: uppercase;
+}
+
 .rodape__social {
     display: flex;
 }

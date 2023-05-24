@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
 :root {
     --branco: #FFF;
     --preto: #000;
@@ -48,6 +50,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    color: var(--branco);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: var(--verde-dw);
+  }
+  
 
 .container {
     padding-right: 6%;

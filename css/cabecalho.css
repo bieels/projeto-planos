@@ -1,17 +1,14 @@
-a {
-  color: var(--branco);
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: var(--verde-dw);
+nav a {
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
 }
 
 .logo img {
-  width: 100%;
+  width: 120%;
   margin-top: 40px;
+  margin-left: -80px;
 }
+
 
 
 nav {
@@ -21,7 +18,7 @@ nav {
   background: var(--bg-nav);
   height: 100px;
   gap: 20px;
-  
+
 }
 
 .nav-list {
@@ -31,8 +28,8 @@ nav {
 }
 
 .nav-list li {
-  letter-spacing: 3px;
-  margin-right: 70px;
+  letter-spacing: 1px;
+  margin-right: 50px;
   transition: 300ms;
 }
 
