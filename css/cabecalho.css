@@ -123,9 +123,14 @@ nav {
   /* transform: translate(10px, -50%);
 } */
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .btn__text {
     display: none;
+  }
+  .logo img {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0px;
   }
 }
 

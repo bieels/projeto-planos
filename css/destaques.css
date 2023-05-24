@@ -53,9 +53,23 @@
     margin: 0 auto;
 }
 
-@media (max-width: 800px) {
-    .link1,.link3 {
+@media (max-width: 1300px) {
+    .link3 {
         display: none;
+    }
+
+    .destaques__painel {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 800px) {
+    .link1, .link3 {
+        display: none;
+    }
+
+    .destaques__painel {
+        margin-left: 0px;
     }
 }
 
