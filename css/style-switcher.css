@@ -1,10 +1,11 @@
 .style-switcher {
-  position: relative;
-  bottom: 160px;
-  left: -230px;
+  position: fixed;
+  right: 1%;
+  bottom: 100px;
   background: var(--preto);
-  z-index: 1;
+  z-index: 101;
   transition: all 0.3s ease;
+  transform: translateX(100%);
 }
 
 
@@ -14,10 +15,10 @@
   width: 40px;
   text-align: center;
   font-size: 20px;
-  background: var(--bg-black-100);
-  color: var(--branco);
+  background: var();
+  color: var(--cinza-escuro);
   right: 100%;
-  border: 1px solid var(--branco);
+  /* border: 1px solid var(--cinza-escuro); */
   margin-right: 25px;
   cursor: pointer;
   transition: all 0.8s ease;
@@ -28,19 +29,21 @@
   line-height: 40px;
 }
 
-@media screen and (max-width: 1024px) {
-  .style-switcher {
-    bottom: 30px;
-    margin-left: 90px;
-  }
+.style-switcher .style-switcher-toggler {
+  top: 0;
 }
+
+.style-switcher .day-night {
+  top: 0px;
+}
+
+
+
+@media screen and (max-width: 1024px) {}
 
 @media (max-width: 500px) {
   .style-switcher {
-    left: 150px;
-    
-    bottom: 300px;
+    bottom: 50px;
+    margin-right: -25px;
   }
-
 }
-
