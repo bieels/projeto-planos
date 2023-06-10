@@ -43,14 +43,14 @@
 //   );
 //   mobileNavbar.init();
 
-window.onscroll = function() {
-  var botao = document.getElementById("botao");
-  if (window.pageYOffset > 200) { // Altere o valor "200" para a quantidade desejada
-    botao.classList.add("visible");
-    botao.classList.remove("hidden");
-  } else {
-    botao.classList.remove("visible");
-    botao.classList.add("hidden");
-  }
-};
+// window.onscroll = function() {
+//   var botao = document.getElementById("botao");
+//   if (window.pageYOffset > 200) { // Altere o valor "200" para a quantidade desejada
+//     botao.classList.add("visible");
+//     botao.classList.remove("hidden");
+//   } else {
+//     botao.classList.remove("visible");
+//     botao.classList.add("hidden");
+//   }
+// };
 
