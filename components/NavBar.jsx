@@ -1,4 +1,5 @@
-import dwlogo from '/img/dwlogo2.png'
+import dwlogo from '/img/dwlogo2.png';
+import './NavBar.css';
 
 
 const NavBar = () => {

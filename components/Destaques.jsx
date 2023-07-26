@@ -1,8 +1,10 @@
+import './Destaques.css';
+
 const Destaques = () => {
     return (
         <>
         <section id="destaques" className="destaques container">
-             <h2 className="destaques__titulo">Destaques</h2>
+             <h2 className="destaques__titulo"></h2>
             <div className="destaques__painel">
                 <a href="#planos">
                     <figure className="destaques__link link1">

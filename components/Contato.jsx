@@ -1,3 +1,6 @@
+import './Contato.css';
+
+
 const Contato = () => {
     return (
         <>

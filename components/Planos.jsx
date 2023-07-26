@@ -1,3 +1,5 @@
+import './Planos.css';
+
 const Planos = () => {
     return (
         <>

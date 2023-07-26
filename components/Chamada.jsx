@@ -1,3 +1,5 @@
+import './Chamada.css';
+
 const Chamada = () => {
     return (
         <>

@@ -1,7 +1,10 @@
+import './Sobre.css';
+
 const Sobre = () => {
     return (
         <>
-            <section id="empresa" className="sobre container" />
+        
+            <section id="empresa" className="sobre container">
             <div className="sobre__conteudo">
                 <h2 className="sobre__titulo">Sobre Nós</h2>
                 <p className="sobre__texto">
@@ -38,6 +41,7 @@ const Sobre = () => {
                         - Ética e transparência nos nossos negócios.</p>
                 </li>
             </ul>
+            </section>
         </>
     );
 };

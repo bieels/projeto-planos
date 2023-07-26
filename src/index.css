@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+:root {
+    --branco: #FFF;
+    --preto: #000;
+    --cinza-claro: #DFE3E5;
+    --cinza-escuro: #4F4C4C;
+    --cinza-medio: #D9D9D9;
+    --verde-dw: #42ab1c;
+    --plano-branco: #FFF;
+        
+    --fonte-link: #0084FF;
+    --fonte-cinza: #667;
+    --fonte-preta: #000000;
+    --bg-rodape: #000000;
+    --bg-chamada-mobile: #000000;
+    --bg-nav: #000000;
+    --bg-branco: #FFF;
+    
+    --shadow-section1: rgba(41, 41, 41, 0.247);
+    --shadow-section2: rgba(48, 48, 48, 0.212);
+
+
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+body.dark {
+  --bg-branco: #000000;
+  --cinza-claro: #131313;
+  --cinza-escuro: #a5a5a5;
+  --bg-black-50: #393939;
+  --fonte-preta: #ffffff;
+  --bg-rodape: #131313;
+  --plano-branco: #000000;
+  --shadow-section1: rgba(39, 39, 39, 0.308);
+  --shadow-section2: rgba(0, 0, 0, 0.336);
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none; 
+    list-style: none;      
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: var(--branco);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: var(--verde-dw);
+  }
+  
+
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+.botao {
+    text-align: center;
+
+    display: block;
+
+    width: 100%;
+    max-width: 350px;
+
+    box-sizing: border-box;
+
+    padding: 1rem 2rem;
+
+    border: 3px solid var(--branco);
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+
+}
+
+.style-switcher {
+  position: fixed;
+  right: 1%;
+  bottom: 100px;
+  background: var(--preto);
+  z-index: 101;
+  transition: all 0.3s ease;
+  transform: translateX(100%);
+}
+
+
+.style-switcher .s-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  background: var();
+  color: var(--cinza-escuro);
+  right: 100%;
+  /* border: 1px solid var(--cinza-escuro); */
+  margin-right: 25px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  border-radius: 50%;
+}
+
+.style-switcher .s-icon i {
+  line-height: 40px;
+}
+
+.style-switcher .style-switcher-toggler {
+  top: 0;
+}
+
+.style-switcher .day-night {
+  top: 0px;
+}
+
+
+@media (max-width: 500px) {
+  .style-switcher {
+    bottom: 50px;
+    margin-right: -25px;
+  }
+}

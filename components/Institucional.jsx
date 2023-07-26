@@ -1,3 +1,5 @@
+import './Institucional.css';
+
 const Institucional = () => {
     return (
         <>
