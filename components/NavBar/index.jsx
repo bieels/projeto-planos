@@ -6,7 +6,7 @@ import { useState } from "react";
 const NavBar = () => {
   return (
     <>
-      <header id="home">
+      <header>
         <nav>
           <a className="logo" href="/">
             <img src={dwlogo} alt="" />
