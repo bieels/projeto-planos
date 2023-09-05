@@ -1,0 +1,46 @@
+.dark_mode {
+    margin: -11px -10px 0 200px;
+}
+
+.dark_mode_label {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  box-shadow: 0 0 1px 2px var(--branco);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dark_mode_label:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  border-radius: 180px;
+  transition: 0.3s;
+}
+.dark_mode_input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.dark_mode_input:checked + .dark_mode_label {
+  background: transparent;
+}
+
+.dark_mode_label .icon {
+  width: 40px;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+@media (max-width: 1700px) {
+  .dark_mode {
+    margin: -11px -50px 0 10px;
+  }
+}

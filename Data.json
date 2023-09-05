@@ -1,0 +1,39 @@
+{
+    "plans" : [
+        {
+            "title": "50 Mbps",
+            "price": "R$69,90 Mensal",
+            "desc1": "Download: 50Mbps",
+            "desc2": "Franquia Ilimitada",
+            "desc3": "Upload Sob Consulta"
+        },
+        {
+            "title": "300 Mbps",
+            "price": "R$99,90 Mensal",
+            "desc1": "Download: 300Mbps",
+            "desc2": "Franquia Ilimitada",
+            "desc3": "Upload Sob Consulta"
+        },       
+        {
+            "title": "400 Mbps",
+            "price": "R$119,90 Mensal",
+            "desc1": "Download: 400Mbps",
+            "desc2": "Franquia Ilimitada",
+            "desc3": "Upload Sob Consulta"
+        },        
+        {
+            "title": "500 Mbps",
+            "price": "R$149,90 Mensal",
+            "desc1": "Download: 500Mbps",
+            "desc2": "Franquia Ilimitada",
+            "desc3": "Upload Sob Consulta"
+        }
+    ],
+    "highlights" : [
+        {
+            "img1": "",
+            "img2": "",
+            "img3": ""
+        }
+    ]
+}
