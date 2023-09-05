@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 :root {
     --branco: #FFF;
@@ -24,14 +25,14 @@
     --montserrat: 'Montserrat', sans-serif;
 }
 
-body.dark {
+[data-theme="dark"] {
   --bg-branco: #000000;
   --cinza-claro: #131313;
   --cinza-escuro: #a5a5a5;
   --bg-black-50: #393939;
   --fonte-preta: #ffffff;
   --bg-rodape: #131313;
-  --plano-branco: #000000;
+  --plano-branco: #1a1a1a;
   --shadow-section1: rgba(39, 39, 39, 0.308);
   --shadow-section2: rgba(0, 0, 0, 0.336);
 }
@@ -43,6 +44,7 @@ body.dark {
     outline: none;
     text-decoration: none; 
     list-style: none;      
+    transition: transform .45s ease, background .45s ease;
 }
 
 body {
@@ -126,12 +128,4 @@ a {
 
 .style-switcher .day-night {
   top: 0px;
-}
-
-
-@media (max-width: 500px) {
-  .style-switcher {
-    bottom: 50px;
-    margin-right: -25px;
-  }
 }
