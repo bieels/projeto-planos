@@ -17,7 +17,7 @@ nav {
 }
 
 nav a {
-  font-family: Lato, sans-serif;
+  font-family: var(--montserrat);
   text-transform: uppercase;
 }
 
@@ -25,11 +25,13 @@ nav a {
   width: 250px;
   margin-top: 40px;
   padding-right: 73px;
+  transition: all 300ms ease;
 }
 
 .btn-end {
   display: inline-flex;
   margin-left: 30px;
+  transition: all 300ms ease;
 }
 
 .nav-list {
@@ -160,5 +162,17 @@ nav a {
   }
 
   .cliente {
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-end {
+    margin-right: -50px;
+    scale: .8;
+  }
+
+  .logo img {
+    width: 180px;
+    margin-top: 30px;
   }
 }

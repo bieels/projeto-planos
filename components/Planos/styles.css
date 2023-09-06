@@ -90,12 +90,12 @@
   
   .data-card .link-text svg {
     margin-left: .5em;
+    margin-bottom: -3px;
     transition: transform .6s ease;
   }
   
   .data-card .link-text svg path {
-    transition: fill .45s ease;
-    
+    transition: fill .45s ease;    
   }
   
   .data-card:hover {
