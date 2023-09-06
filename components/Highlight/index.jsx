@@ -25,7 +25,7 @@ const HighLight = () => {
                     </figure>
                 </a>
             </div>
-            <a href="#" className="destaques__botao botao">Receber destaques por email</a>
+            {/* <a href="#" className="destaques__botao botao">Receber destaques por email</a> */}
         </section>
         </>
     );

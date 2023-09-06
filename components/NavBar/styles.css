@@ -1,6 +1,7 @@
 header {
   position: fixed;
   z-index: 999;
+  user-select: none;
 }
 
 nav {
@@ -10,7 +11,6 @@ nav {
   background: var(--bg-nav);
   width: 100vw;
   height: 100px;
-  
   box-shadow: 0px 34px 105px 10px rgba(0, 0, 0, 0.55);
 
   user-select: none;
@@ -22,16 +22,16 @@ nav a {
 }
 
 .logo img {
-  width: 250px;
-  margin-top: 40px;
+  width: 220px;
+  margin-top: 10px;
   padding-right: 73px;
   transition: all 300ms ease;
 }
 
 .btn-end {
   display: inline-flex;
-  margin-left: 30px;
   transition: all 300ms ease;
+  margin-top: 10px;
 }
 
 .nav-list {
@@ -44,7 +44,7 @@ nav a {
   letter-spacing: 1px;
   margin: 0 20px 0 20px;
   transition: 300ms;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .nav-list li:hover {
@@ -53,7 +53,7 @@ nav a {
 }
 
 .cliente {
-  margin-top: 10px;
+  margin-top: 19px;
   transition: all 300ms;
 }
 
@@ -76,8 +76,8 @@ nav a {
   place-items: center;
   top: 0;
   left: 0;
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   box-shadow: 0 0 1px 2px var(--verde-dw);
   transition: 0.3s linear;
@@ -85,11 +85,11 @@ nav a {
 }
 
 .btn__white-circle {
-  top: 40%;
-  left: 40%;
+  top: 32%;
+  left: 31%;
   transform: translate(-50%, -50%) scale(0);
-  width: 56px;
-  height: 56px;
+  width: 42px;
+  height: 42px;
   border-radius: 100%;
   background: var(--verde-dw);
   display: flex;
@@ -109,7 +109,7 @@ nav a {
   padding: 24px 8px;
   transition: 0.3s linear;
   margin: -4px 0 0 30px;
-
+  font-size: 10px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -126,31 +126,28 @@ nav a {
   } */
 
 @media (max-width: 1700px) {
-  .btn__text {
-    display: none;
-  }
   .logo img {
     width: 200px;
     padding: 0;
   }
   .btn-end {
-    margin-right: 3%;
+    margin-right: -100px;
+    width: 50px;
   }
 
-  .cliente {
-  }
   .btn-end {
-    width: 200px;
+    width: 100px;
     margin: 0;
+    margin-top: 18px;
+  }
+  .cliente {
+    margin-top: 12px;
   }
 }
 
 @media (max-width: 1300px) {
   body {
-    overflow-x: hidden;
-  }
-  .nav {
-    flex-wrap: wrap;
+    /* overflow-x: hidden; */
   }
 
   .logo img {
@@ -161,18 +158,35 @@ nav a {
     display: none;
   }
 
-  .cliente {
+  .btn-end {
+    width: 10%;
+    width: 120px;
+    margin: 0;
+    margin-top: 18px;
   }
 }
 
 @media (max-width: 480px) {
   .btn-end {
-    margin-right: -50px;
+    width: 200px;
+    margin-right: -60px;
+    margin-top: 13px;
     scale: .8;
   }
 
+  .cliente {
+    margin-top: 10px;
+  }
+
   .logo img {
-    width: 180px;
-    margin-top: 30px;
+    width: 160px;
+    margin-top: 5px;
+    opacity: 50%;
+  }
+
+  nav {
+    height: 70px;
+    background: rgba(0, 0, 0, 0.733);
+    
   }
 }

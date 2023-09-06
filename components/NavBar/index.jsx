@@ -1,5 +1,5 @@
 import DarkMode from "../DarkMode";
-import dwlogo from "/img/dwlogo2.png";
+import dwlogo from "/img/dwlogo3.png";
 import "./styles.css";
 import { useState } from "react";
 
@@ -43,8 +43,7 @@ const NavBar = () => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  >
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  ><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
                 </span>
@@ -53,11 +52,10 @@ const NavBar = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     id="icon-arrow-right"
                     viewBox="0 0 21 12"
-                  >
-                    <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
+                  ><path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
                   </svg>
                 </span>
-                <span className="btn__text">Área do Cliente</span>
+                {/* <span className="btn__text">Área do Cliente</span> */}
               </a>
             </div>
             <DarkMode />

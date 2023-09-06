@@ -7,11 +7,9 @@
     
     color: var(--branco);
     text-align: center;
-    
+    overflow: hidden;
     background-color: var(--bg-chamada-mobile);
 
-    padding-top: 12.25rem;
-    padding-bottom: 2.5rem;
     user-select: none;
 }
 
@@ -20,8 +18,6 @@
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding-top: 90px;
-    margin-bottom: 1.5rem;
 }
 
 .chamada__texto {
@@ -41,11 +37,11 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .chamada {
         background-size: cover;
 
-        padding-top: 8.25rem;
+        overflow: hidden;
     }
 
     .chamada__titulo {

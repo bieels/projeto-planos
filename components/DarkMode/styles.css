@@ -1,10 +1,10 @@
 .dark_mode {
-    margin: -9px -10px 0 200px;
+    margin: 0 -10px 0 10px;
 }
 
 .dark_mode_label {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   display: grid;
   place-items: center;
@@ -30,18 +30,19 @@
   visibility: hidden;
 }
 .dark_mode_input:checked + .dark_mode_label {
-  background: transparent;
+  box-shadow: 0 0 1px 2px #3b3b3b;
 }
 
 .dark_mode_label .icon {
-  width: 40px;
+  width: 25px;
   z-index: 100;
   transition: 0.3s;
+  /* color: white; */
 }
 
 @media (max-width: 1700px) {
   .dark_mode {
-    margin: -9px -50px 0 10px;
+    margin: -8px -50px 0 10px;
 
   }
 }

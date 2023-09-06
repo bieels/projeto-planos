@@ -45,6 +45,7 @@
     text-decoration: none; 
     list-style: none;      
     transition: transform .45s ease, background .45s ease;
+    user-select: none;
 }
 
 body {
