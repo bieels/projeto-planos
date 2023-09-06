@@ -19,7 +19,7 @@ const Planos = () => {
                       height="16"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="#000000"
+                      stroke="var(--fonte-preta)"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -36,13 +36,13 @@ const Planos = () => {
                       height="16"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="#000000"
+                      stroke="var(--fonte-preta)"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
                       <polyline points="9 11 12 14 22 4"></polyline>
-                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
                     </svg>
                     {plan.desc2}
                   </p>{" "}
@@ -54,7 +54,7 @@ const Planos = () => {
                       height="16"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="#000000"
+                      stroke="var(--fonte-preta)"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"

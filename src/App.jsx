@@ -17,8 +17,8 @@ function App() {
     <NavBar />
     <Chamada /> 
     <HighLight />
-    <Sobre />
     <Planos />
+    <Sobre />
     <Contato />
     <Institucional />
     <Footer />

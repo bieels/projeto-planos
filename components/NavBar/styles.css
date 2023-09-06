@@ -28,6 +28,10 @@ nav a {
   transition: all 300ms ease;
 }
 
+.logo img:hover {
+  opacity: 60%;
+}
+
 .btn-end {
   display: inline-flex;
   transition: all 300ms ease;
@@ -38,6 +42,7 @@ nav a {
   list-style: none;
   display: flex;
   font-size: 22px;
+  margin-right: 11%;
 }
 
 .nav-list li {

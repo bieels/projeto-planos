@@ -132,6 +132,7 @@
 
   .plan__desc svg {
     margin: 0 10px -2px;
+    color: var(--fonte-preta);
   }
   
   @keyframes point {
