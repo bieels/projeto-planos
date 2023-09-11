@@ -1,11 +1,11 @@
 import "./styles.css";
 import Sun from "@mui/icons-material/LightMode";
 import Moon from "@mui/icons-material/Brightness3";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function DarkMode() {
 
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(null)
 
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
@@ -19,13 +19,21 @@ export default function DarkMode() {
 
   const selectedTheme = localStorage.getItem("selectedTheme");
 
-  if (selectedTheme === "dark") {
-    setDarkMode();
-  }
   const toggleTheme = (e) => {
     if (e.target.checked) setDarkMode();
     else setLightMode();
   };
+
+ useEffect(() => {
+    if(selectedTheme === "dark") {
+      setActive(false)
+      setDarkMode();
+    } else {
+      setActive(true)
+    }
+ }, []);
+
+console.log(selectedTheme)
 
   return (
     <div className="dark_mode">

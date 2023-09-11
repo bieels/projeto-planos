@@ -1,39 +1,86 @@
 /* ----- CONTATO ----- */
 
 .contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    background: var(--bg-branco);
-    transition: color .45s ease;
-    box-shadow: 0px 1px 50px 10px var(--shadow-section2);
-    user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: var(--bg-branco);
+  transition: color 0.45s ease;
+  box-shadow: 0px 1px 50px 10px var(--shadow-section2);
+  user-select: none;
 }
 
-.contato p{
-    color: var(--cinza-escuro);
+.contato p {
+  color: var(--cinza-escuro);
 }
 .contato__titulo {
-    color: var(--cinza-escuro);
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: var(--montserrat);
-    text-transform: uppercase;
-    text-align: center;
+  color: var(--cinza-escuro);
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  text-align: center;
 
-    margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .contato__botao {
-    color: var(--cinza-escuro);
+  color: var(--cinza-escuro);
 
-    border-color: var(--cinza-escuro);
+  border-color: var(--cinza-escuro);
 
-    margin-top: 1rem;
+  margin-top: 1rem;
+}
+
+/* ----- Endereço ----- */
+.endereco {
+display: flex;
+justify-content: center;
+flex-direction: row;
+margin-top: 100px;
+gap: 300px;
+}
+
+.endereco__titulo {
+  color: var(--cinza-escuro);
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 1.25rem;
+}
+
+.endereco__descricao {
+}
+
+.endereco__content {
+  font-style: normal;
+}
+
+.endereco__contato {
+}
+
+.endereco__contato-telefone {
+}
+
+.endereco__contato-email {
+}
+
+.endereco__maps {
+  width: 500px;
+  height: 250px;
+  border: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
 }

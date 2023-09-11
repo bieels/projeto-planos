@@ -3,8 +3,7 @@ import Chamada from '../components/Chamada'
 import HighLight from '../components/Highlight'
 import Sobre from '../components/Sobre'
 import Planos from '../components/Planos'
-import Contato from '../components/Contact'
-import Institucional from '../components/Institucional'
+import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 import './App.css'
@@ -19,8 +18,7 @@ function App() {
     <HighLight />
     <Planos />
     <Sobre />
-    <Contato />
-    <Institucional />
+    {/* <Contact /> */}
     <Footer />
     </>
   )
