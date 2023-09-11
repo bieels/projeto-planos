@@ -13,11 +13,11 @@
     user-select: none;
 }
 
-.background-chamada {
+/* .background-chamada {
     width: 100%;
     margin-top: 5rem;
     object-fit: contain;
-}
+} */
 
 .chamada__titulo {
     font-family: var(--montserrat);

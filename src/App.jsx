@@ -18,7 +18,7 @@ function App() {
     <HighLight />
     <Planos />
     <Sobre />
-    {/* <Contact /> */}
+    <Contact />
     <Footer />
     </>
   )
