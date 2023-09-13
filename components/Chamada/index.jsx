@@ -1,7 +1,7 @@
 import dwbg from "/img/imgdw.jpg";
 import './styles.css';
 
-const Chamada = () => {
+export default function Chamada () {
     return (
         <>
             <section id="home" className="chamada">
@@ -13,5 +13,3 @@ const Chamada = () => {
         </>
     );
 };
-
-export default Chamada;

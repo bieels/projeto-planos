@@ -3,7 +3,7 @@ import dwlogo from "/img/dwlogo3.png";
 import "./styles.css";
 import { useState } from "react";
 
-const NavBar = () => {
+export default function NavBar () {
   return (
     <>
       <header>
@@ -20,10 +20,10 @@ const NavBar = () => {
               <a href="#destaques">Destaques</a>
             </li>
             <li>
-              <a href="#empresa">Empresa</a>
+              <a href="#planos">Planos</a>
             </li>
             <li>
-              <a href="#planos">Planos</a>
+              <a href="#empresa">Empresa</a>
             </li>
             <li>
               <a href="#contato">Contato</a>
@@ -66,4 +66,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+

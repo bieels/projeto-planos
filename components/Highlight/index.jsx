@@ -1,6 +1,6 @@
 import './styles.css';
 
-const HighLight = () => {
+export default function HighLight () {
     return (
         <>
         <section id="destaques" className="destaques container">
@@ -8,19 +8,19 @@ const HighLight = () => {
             <div className="destaques__painel">
                 <a href="#planos">
                     <figure className="destaques__link link1">
-                        <img src="img/dwsolutionsinternet-20230520-0001.jpg" alt="" className="destaques__painel-imagem" />
+                        <img src="img/dwsolutionsinternet-01.jpg" alt="" className="destaques__painel-imagem" />
                          {/* <figcaption className="destaques__painel-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption> */}
                     </figure>
                 </a>
                 <a href="#planos">
                     <figure className="destaques__link">
-                        <img src="img/dwsolutionsinternet-20230520-0002.jpg" alt="" className="destaques__painel-imagem" />
+                        <img src="img/dwsolutionsinternet-02.jpg" alt="" className="destaques__painel-imagem" />
                          {/* <figcaption className="destaques__painel-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption> */}
                     </figure>
                 </a>
                 <a href="#planos">
                     <figure className="destaques__link link3">
-                        <img src="img/dwsolutionsinternet-20230520-0003.jpg" alt="" className="destaques__painel-imagem" />
+                        <img src="img/dwsolutionsinternet-03.jpg" alt="" className="destaques__painel-imagem" />
                          {/* <figcaption className="destaques__painel-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption> */}
                     </figure>
                 </a>
@@ -31,4 +31,3 @@ const HighLight = () => {
     );
 };
 
-export default HighLight;

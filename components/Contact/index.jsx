@@ -1,32 +1,62 @@
-import './styles.css';
+import "./styles.css";
 
-
-const Contact = () => {
-    return (
-        <>
-        <section id="contato" className="contato container">
-            <h2 className="contato__titulo">Contato</h2>
-            <p>Entre em contato com a gente</p>
-            <a href="#" className="contato__botao botao">Entre em contato</a>
-            <div className="endereco">
-                <div className="endereco__informacoes">
-                    <p className="endereco__descricao">Um pouco mais sobre a DW</p>
-                    <address className="endereco__content">
-                       <h2 className='endereco__titulo'>Nossas Redes Sociais</h2>
-                        <article className="endereco__contato">
-                             <p><a href="tel:+557131992109" className="endereco__contato-telefone">(71) 3199-2109</a> ou
-                                <a href="mailto:contatos@dwsolutions.com.br"
-                                    className="endereco__contato-email">contatos@dwsolutions.com.br</a>
-                            </p>
-                        </article>
-                    </address>
-                </div>
-                <iframe className="endereco__maps" style={{filter: "var(--invert)"}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945.3152589835986!2d-38.397825372436536!3d-12.802478492451216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716150c7af02927%3A0x99b492e80fe0b94e!2sDW%20Solutions%20Internet%20Banda%20Larga!5e0!3m2!1spt-BR!2sbr!4v1694290886580!5m2!1spt-BR!2sbr"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>           
-        </section>
-        </>
-    );
+export default function Contact () {
+  return (
+    <>
+      <section id="contato" className="contato container">
+        <h2 className="contato__titulo">Contato</h2>
+        <p>Entre em contato com a gente</p>
+        <a href="#" className="contato__botao botao">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="20"
+            height="20"
+            viewBox="0 0 32 32"
+          >
+            <path             
+              d="M 24.503906 7.503906 C 22.246094 5.246094 19.246094 4 16.050781 4 C 9.464844 4 4.101563 9.359375 4.101563 15.945313 C 4.097656 18.050781 4.648438 20.105469 5.695313 21.917969 L 4 28.109375 L 10.335938 26.445313 C 12.078125 27.398438 14.046875 27.898438 16.046875 27.902344 L 16.050781 27.902344 C 22.636719 27.902344 27.996094 22.542969 28 15.953125 C 28 12.761719 26.757813 9.761719 24.503906 7.503906 Z M 16.050781 25.882813 L 16.046875 25.882813 C 14.265625 25.882813 12.515625 25.402344 10.992188 24.5 L 10.628906 24.285156 L 6.867188 25.269531 L 7.871094 21.605469 L 7.636719 21.230469 C 6.640625 19.648438 6.117188 17.820313 6.117188 15.945313 C 6.117188 10.472656 10.574219 6.019531 16.054688 6.019531 C 18.707031 6.019531 21.199219 7.054688 23.074219 8.929688 C 24.949219 10.808594 25.980469 13.300781 25.980469 15.953125 C 25.980469 21.429688 21.523438 25.882813 16.050781 25.882813 Z M 21.496094 18.445313 C 21.199219 18.296875 19.730469 17.574219 19.457031 17.476563 C 19.183594 17.375 18.984375 17.328125 18.785156 17.625 C 18.585938 17.925781 18.015625 18.597656 17.839844 18.796875 C 17.667969 18.992188 17.492188 19.019531 17.195313 18.871094 C 16.894531 18.722656 15.933594 18.40625 14.792969 17.386719 C 13.90625 16.597656 13.304688 15.617188 13.132813 15.320313 C 12.957031 15.019531 13.113281 14.859375 13.261719 14.710938 C 13.398438 14.578125 13.5625 14.363281 13.710938 14.1875 C 13.859375 14.015625 13.910156 13.890625 14.011719 13.691406 C 14.109375 13.492188 14.058594 13.316406 13.984375 13.167969 C 13.910156 13.019531 13.3125 11.546875 13.0625 10.949219 C 12.820313 10.367188 12.574219 10.449219 12.390625 10.4375 C 12.21875 10.429688 12.019531 10.429688 11.820313 10.429688 C 11.621094 10.429688 11.296875 10.503906 11.023438 10.804688 C 10.75 11.101563 9.980469 11.824219 9.980469 13.292969 C 9.980469 14.761719 11.050781 16.183594 11.199219 16.382813 C 11.347656 16.578125 13.304688 19.59375 16.300781 20.886719 C 17.011719 21.195313 17.566406 21.378906 18 21.515625 C 18.714844 21.742188 19.367188 21.710938 19.882813 21.636719 C 20.457031 21.550781 21.648438 20.914063 21.898438 20.214844 C 22.144531 19.519531 22.144531 18.921875 22.070313 18.796875 C 21.996094 18.671875 21.796875 18.597656 21.496094 18.445313 Z"
+            ></path>
+          </svg>
+          Entre em contato
+        </a>
+        <div className="endereco">
+          <div className="endereco__informacoes">
+            <p className="endereco__descricao">Um pouco mais sobre a DW</p>
+            <address className="endereco__content">
+              <h2 className="endereco__titulo">Nossas Redes Sociais</h2>
+              <article className="endereco__contato">
+                <p>
+                  <a
+                    href="tel:+557131992109"
+                    className="endereco__contato-telefone"
+                  >
+                    (71) 3199-2109
+                  </a>{" "}
+                  ou
+                  <a
+                    href="mailto:contatos@dwsolutions.com.br"
+                    className="endereco__contato-email"
+                  >
+                    contatos@dwsolutions.com.br
+                  </a>
+                </p>
+              </article>
+            </address>
+          </div>
+          <iframe
+            className="endereco__maps"
+            style={{ filter: "var(--invert)" }}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945.3152589835986!2d-38.397825372436536!3d-12.802478492451216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716150c7af02927%3A0x99b492e80fe0b94e!2sDW%20Solutions%20Internet%20Banda%20Larga!5e0!3m2!1spt-BR!2sbr!4v1694290886580!5m2!1spt-BR!2sbr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </>
+  );
 };
 
-export default Contact;
 

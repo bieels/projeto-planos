@@ -9,6 +9,7 @@ export default function Planos() {
   return (
     <>
       <section id="planos" className="planos container">
+      <h2 class="planos__titulo">Nossos Planos</h2>
         <Slider className="slider-container" {...settings}>
           {plans.map((plan) => (
             <div className="cards">
@@ -69,7 +70,7 @@ export default function Planos() {
                     {plan.desc3}
                   </p>
                 </div>
-                <a href="#home" className="link-text">
+                <a href="#home" className="link-text" onClick={() => setShowModal(true)}>
                   Assine Agora
                   <svg
                     width="25"

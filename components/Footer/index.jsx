@@ -1,7 +1,7 @@
 import DarkMode from '../DarkMode';
 import './styles.css';
 
-const Footer = () => {
+export default function Footer () {
     return (
         <>
         <footer className="rodape container">
@@ -19,4 +19,3 @@ const Footer = () => {
     );
 };
 
-export default Footer;

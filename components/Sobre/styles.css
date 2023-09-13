@@ -20,16 +20,18 @@
     font-family: var(--montserrat);
     text-transform: uppercase;
     text-align: center;
-    margin-left: -200px;
+    /* margin-left: -200px; */
     margin-bottom: 1.25rem;
 }
 
 .sobre__texto {
-    width: 300px;
-    margin-left: -200px;
+    width: 500px;
+    text-align: center;
+    margin-left: ;
     line-height: normal;
     font-size: 1.4rem;
     margin-bottom: 3rem;
+
 }
 
 .sobre__conteudo p{
@@ -52,11 +54,13 @@
 
 .sobre__imagem {
     width: 100vw;
-    max-width: 100px;
+    max-width: 300px;
 
     box-shadow: 0 2px 10px 5px #00000020;
 
     margin-bottom: .5rem;
+    margin-left: 200px;
+    
 }
 
 .item__titulo svg {
@@ -88,67 +92,74 @@
     .sobre__texto {
         margin-left: 0;
     }
+    
 
     .sobre__imagem {
         display: block;
+        
     }
 }
 
-/* ----- DIFERENCIAIS ----- */
-
-.diferenciais {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-    transition: transform .45s ease, background .45s ease;
+/* .sobre {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-.diferenciais__lista {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-}
-
-.diferenciais__item {
-    width: 350px;
-
-    box-sizing: border-box;
-
-
-
-    padding: 2rem 2rem 2rem 2rem;
-}
-
-.diferenciais svg {
-    margin-right: 5px;
-}
-
-.item__titulo {
+.sobre__titulo {
     color: var(--cinza-escuro);
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
     text-transform: uppercase;
+    text-align: center;
 
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
-.item__texto {
+.sobre__texto {
     line-height: normal;
-    font-size: 1rem;
-    color: var(--fonte-cinza);
+
+    margin-bottom: 1rem;
+}
+
+.sobre__texto--destaque {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+}
+
+.sobre__plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin-bottom: 1rem;
+}
+
+.sobre__imagem {
+    display: none;
 }
 
 @media screen and (min-width: 1024px) {
-    .diferenciais {
-        background-color: var(--cinza-claro);
+    .sobre {
+        display: flex;
     }
 
-    .diferenciais__lista {
-        justify-content: space-around;
+    .sobre__conteudo {
+        margin-right: 3rem;
     }
-}
 
-@media (max-width: 1200px) {
-    .diferenciais__lista {
-        flex-wrap: wrap;
+    .sobre__titulo {
+        text-align: left;
     }
-}
+
+    .sobre__texto--divisao {
+        border-bottom: 1px solid var(--cinza-medio);
+
+        padding-bottom: 1.5rem;
+    }
+
+    .sobre__imagem {
+        display: block;
+        width: 30%;
+    }
+} */

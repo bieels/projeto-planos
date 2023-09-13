@@ -11,6 +11,7 @@
   transition: color 0.45s ease;
   box-shadow: 0px 1px 50px 10px var(--shadow-section2);
   user-select: none;
+  transition: transform .45s ease, background .45s ease;
 }
 
 .contato p {
@@ -34,14 +35,25 @@
 
   margin-top: 1rem;
 }
+.contato__botao svg {
+  fill: var(--cinza-escuro);
+  margin: 0 2px -4px 0 ;
+
+}
+.contato__botao:hover {
+  color: var(--cinza-escuro);
+  scale: .95;
+}
 
 /* ----- Endereço ----- */
 .endereco {
 display: flex;
+align-items: center;
 justify-content: center;
 flex-direction: row;
 margin-top: 100px;
-gap: 300px;
+gap: 20%;
+
 }
 
 .endereco__titulo {
@@ -77,7 +89,16 @@ gap: 300px;
   border: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .endereco {
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+  }
+  .endereco__maps {
+    width: 100%;
+  }
+
 
 }
 

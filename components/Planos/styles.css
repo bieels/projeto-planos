@@ -4,8 +4,8 @@
 .planos {
     background: var(--cinza-claro);
   
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     /* height: 100vh; */
   
     box-sizing: border-box;
@@ -14,12 +14,25 @@
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
     /* border: .75em solid white; */
     padding: 1em;
     font-family: 'Open Sans', sans-serif;
     box-shadow: 0px 1px 50px 10px var(--shadow-section1);
     transition: transform .45s ease, background .45s ease;
   }
+  .planos__titulo {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 10.25rem;
+    margin-top: -7rem;
+}
   
   .slider-container {
     /* background-color: red; */
@@ -157,6 +170,12 @@
   @media (max-width: 700px) {
     .data-card {
       margin: 1rem 7rem 1rem 7rem;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .data-card {
+      margin: 1rem 2rem 1rem 2rem;
     }
   }
 
