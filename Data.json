@@ -35,9 +35,24 @@
   ],
   "highlights": [
     {
-      "img1": "",
-      "img2": "",
-      "img3": ""
+      "id": "1",
+      "img": "img/dwsolutionsinternet-01.jpg"
+    },
+    {
+      "id": "2",
+      "img": "img/dwsolutionsinternet-02.jpg"
+    },
+    {
+      "id": "3",
+      "img": "img/dwsolutionsinternet-03.jpg"
+    },
+    {
+      "id": "4",
+      "img": "img/dwsolutionsinternet-04.jpg"
+    },
+    {
+      "id": "5",
+      "img": "img/dwsolutionsinternet-05.jpg"
     }
   ],
   "about": [

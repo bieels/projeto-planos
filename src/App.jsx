@@ -1,6 +1,6 @@
 import NavBar from '../components/NavBar'
 import Chamada from '../components/Chamada'
-import HighLight from '../components/Highlight'
+import Destaques from '../components/Destaques'
 import Planos from '../components/Planos'
 import Sobre from '../components/Sobre'
 import Diferenciais from '../components/Diferenciais'
@@ -19,7 +19,7 @@ function App() {
     <NavBar />
     <Modal children={<h1>Test</h1>} />
     <Chamada /> 
-    <HighLight />
+    <Destaques />
     <Sobre />
     <Diferenciais />
     <Planos />

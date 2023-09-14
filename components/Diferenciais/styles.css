@@ -1,65 +1,9 @@
- /* ----- DIFERENCIAIS ----- */
-/* 
 .diferenciais {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+    background: var(--cinza-claro);
+    box-shadow: 0px 1px 50px 10px var(--shadow-section2);
     transition: transform .45s ease, background .45s ease;
-}
-
-.diferenciais__lista {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-}
-
-.diferenciais__item {
-    width: 350px;
-
-    box-sizing: border-box;
-
-
-
-    padding: 2rem 2rem 2rem 2rem;
-}
-
-.diferenciais svg {
-    margin-right: 5px;
-}
-
-.item__titulo {
-    color: var(--cinza-escuro);
-    font-weight: 700;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-
-    margin-bottom: 1.5rem;
-}
-
-.item__texto {
-    line-height: normal;
-    font-size: 1rem;
-    color: var(--fonte-cinza);
-}
-
-@media screen and (min-width: 1024px) {
-    .diferenciais {
-        background-color: var(--cinza-claro);
-    }
-
-    .diferenciais__lista {
-        justify-content: space-around;
-    }
-}
-
-@media (max-width: 1200px) {
-    .diferenciais__lista {
-        flex-wrap: wrap;
-    }
-}  */
-
-.diferenciais {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
 }
 
 .diferenciais__lista {
@@ -79,18 +23,6 @@
     padding: 2rem 0 2rem 5rem;
 }
 
-.diferenciais__item--tempo {
-    background-image: url(../img/icone-relogio.png);
-}
-
-.diferenciais__item--foco {
-    background-image: url(../img/icone-dinheiro.png);
-}
-
-.diferenciais__item--especialistas {
-    background-image: url(../img/icone-quimica.png);
-}
-
 .item__titulo {
     color: var(--cinza-escuro);
     font-weight: 700;
@@ -104,7 +36,7 @@
     line-height: normal;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     .diferenciais {
         background-color: var(--cinza-claro);
     }
@@ -112,4 +44,4 @@
     .diferenciais__lista {
         justify-content: space-around;
     }
-}
+} */

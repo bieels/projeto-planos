@@ -20,10 +20,10 @@ export default function NavBar () {
               <a href="#destaques">Destaques</a>
             </li>
             <li>
-              <a href="#planos">Planos</a>
+              <a href="#empresa">Empresa</a>
             </li>
             <li>
-              <a href="#empresa">Empresa</a>
+              <a href="#planos">Planos</a>
             </li>
             <li>
               <a href="#contato">Contato</a>

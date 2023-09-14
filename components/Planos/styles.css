@@ -4,7 +4,7 @@
 .planos {
     background: var(--cinza-claro);
   
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     /* height: 100vh; */
   
@@ -36,7 +36,7 @@
   
   .slider-container {
     /* background-color: red; */
-    width: 100%;
+    width: 100vw;
     height: 28.75em;
 
   }
@@ -133,11 +133,7 @@
     opacity: 1;
     transform: none;
   }
-  
-  .data-card:hover .link-text {
-    color: var(--fonte-preta);
-  }
-  
+    
   .data-card:hover .link-text svg {
     animation: point 1.25s infinite alternate;
   }
@@ -158,12 +154,6 @@
   
     100% {
       transform: translateX(.2em);
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .slider-container {
-      width: 100vw;
     }
   }
 

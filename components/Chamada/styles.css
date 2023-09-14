@@ -1,57 +1,84 @@
-  /* ----- CHAMADA ----- */
+/* ----- CHAMADA ----- */
 
-  .chamada  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    color: var(--branco);
-    text-align: center;
-    overflow: hidden;
-    background-color: var(--bg-chamada-mobile);
+.chamada {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  padding-top: 100px;
 
-    user-select: none;
+  color: var(--branco);
+  text-align: center;
+  overflow: hidden;
+  background-color: var(--bg-chamada-mobile);
+
+  user-select: none;
 }
 
-/* .background-chamada {
-    width: 100%;
-    margin-top: 5rem;
-    object-fit: contain;
-} */
+.chamada-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 65px 0 65px;
+  margin: 5rem 0 5rem 0;
+}
+
+.background-chamada {
+  align-self: flex-end;
+  width: 450px;
+}
 
 .chamada__titulo {
-    font-family: var(--montserrat);
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-family: var(--montserrat);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .chamada__texto {
-    font-size: 1.25rem;
-    line-height: normal;
+  font-size: 1.25rem;
+  line-height: normal;
 
-    margin: 0 auto 2.5rem;
+  margin: 1rem auto 2.5rem;
 }
 
 .chamada__botao {
-    width: 100%;
+  width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-    .chamada__texto {
-        max-width: 600px;
-    }
+@media screen and (max-width: 1100px) {
+  .chamada {
+    gap: 50px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .chamada {
+    background-size: cover;
+
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 920px) {
+    .background-chamada {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .chamada {
-        background-size: cover;
-
-        overflow: hidden;
+        height: 100%;
     }
+    .background-chamada {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 480px) {
     .chamada__titulo {
-        font-size: 3.25rem;
-        margin-bottom: 2rem;
+        font-size: 1.5rem;
     }
+    
 }

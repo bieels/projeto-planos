@@ -5,7 +5,7 @@ export default function Footer () {
     return (
         <>
         <footer className="rodape container">
-        <img src="../img/LOGO-DW-SOLUTIONS-Whats.png" alt="Logo da Apeperia" className="rodape__logo" />
+        <img src="../img/LOGO-DW-SOLUTIONS-Whats.png" alt="Logo da DW Solutions" className="rodape__logo" />
         <ul className="rodape__navegacao">
             <li className="rodape__link"><a href="#home">Início</a></li>
             <li className="rodape__link"><a href="#destaques">Destaques</a></li>
