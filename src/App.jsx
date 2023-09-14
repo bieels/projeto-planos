@@ -4,7 +4,7 @@ import Destaques from '../components/Destaques'
 import Planos from '../components/Planos'
 import Sobre from '../components/Sobre'
 import Diferenciais from '../components/Diferenciais'
-import Contact from '../components/Contact'
+import Contato from '../components/Contato'
 import Footer from '../components/Footer'
 import Modal from '../components/Modal'
 
@@ -23,7 +23,7 @@ function App() {
     <Sobre />
     <Diferenciais />
     <Planos />
-    <Contact />
+    <Contato />
     <Footer />
     </AppProvider>
     </>

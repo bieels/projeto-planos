@@ -1,6 +1,6 @@
 import "./styles.css";
 
-export default function Contact () {
+export default function Contato () {
   return (
     <>
       <section id="contato" className="contato container">
