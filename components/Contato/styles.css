@@ -12,6 +12,7 @@
   /* box-shadow: 0px 1px 50px 10px var(--shadow-section2); */
   user-select: none;
   transition: transform .45s ease, background .45s ease;
+  overflow: hidden;
 }
 
 .contato p {

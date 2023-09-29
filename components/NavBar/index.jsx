@@ -19,6 +19,7 @@ export default function NavBar () {
       <header>
         <nav style={{
         background: scroll > 100 ? 'black' : 'transparent',
+        boxShadow: scroll > 100 ? 'rgba(0, 0, 0, 0.50) 0px 7px 20px' : 'none'
       }}>
           <a className="logo" href="/">
             <img src={dwlogo} alt="" />
