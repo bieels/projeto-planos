@@ -7,20 +7,20 @@
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background: var(--bg-branco);
+  background: var(--bg-section-2);
   transition: color 0.45s ease;
-  box-shadow: 0px 1px 50px 10px var(--shadow-section2);
+  /* box-shadow: 0px 1px 50px 10px var(--shadow-section2); */
   user-select: none;
   transition: transform .45s ease, background .45s ease;
 }
 
 .contato p {
-  color: var(--cinza-escuro);
+  color: var(--fonte-titulo);
 }
-.contato__titulo {
-  color: var(--cinza-escuro);
+.contato-titulo {
+  color: var(--fonte-titulo);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-family: var(--montserrat);
   text-transform: uppercase;
   text-align: center;
@@ -28,21 +28,29 @@
   margin-bottom: 1.25rem;
 }
 
-.contato__botao {
-  color: var(--cinza-escuro);
+.contato-botao {
+  color: var(--fonte-titulo);
 
-  border-color: var(--cinza-escuro);
+  border-color: var(--fonte-titulo);
 
   margin-top: 1rem;
 }
-.contato__botao svg {
-  fill: var(--cinza-escuro);
+.contato-botao svg {
+  fill: var(--fonte-titulo);
   margin: 0 2px -4px 0 ;
 
 }
-.contato__botao:hover {
-  color: var(--cinza-escuro);
+.contato-botao:hover {
+  color: var(--fonte-titulo);
   scale: .95;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  scale: 1.5;
 }
 
 /* ----- Endereço ----- */
@@ -51,13 +59,13 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: row;
-margin-top: 100px;
+margin: 80px 0;
 gap: 20%;
 
 }
 
-.endereco__titulo {
-  color: var(--cinza-escuro);
+.endereco-titulo {
+  color: var(--fonte-titulo);
   font-weight: 700;
   font-size: 1.5rem;
   font-family: var(--montserrat);
@@ -67,23 +75,23 @@ gap: 20%;
   margin-bottom: 1.25rem;
 }
 
-.endereco__descricao {
+.endereco-descricao {
 }
 
-.endereco__content {
+.endereco-content {
   font-style: normal;
 }
 
-.endereco__contato {
+.endereco-contato {
 }
 
-.endereco__contato-telefone {
+.endereco-contato-telefone {
 }
 
-.endereco__contato-email {
+.endereco-contato-email {
 }
 
-.endereco__maps {
+.endereco-maps {
   width: 500px;
   height: 250px;
   border: 0;
@@ -95,7 +103,7 @@ gap: 20%;
     margin-top: 100px;
     gap: 50px;
   }
-  .endereco__maps {
+  .endereco-maps {
     width: 100%;
   }
 

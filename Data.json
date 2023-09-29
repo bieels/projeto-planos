@@ -60,21 +60,25 @@
       "id": "1",
       "text": "A DW Solutions atua com serviços de internet Banda Larga em diversos bairros de Simões Filho, levando qualidade e tecnologia para seus usuários. Atendimento de excelência, respeito e agilidade, são marcas registradas.",
       "textSec": "Conte com uma equipe especializada e exclusiva pra projetos incríveis a qualquer momento."
-    },
-    {
-      "id": "2",
-      "title": "NOSSA MISSÃO",
-      "desc": "Atuar no setor de telecomunicações com responsabilidade social e ambiental, fornecendo serviços na integração à rede mundial de computadores, com excelência."
-    },
-    {
-      "id": "3",
-      "title": "NOSSA VISÃO",
-      "desc": "Ser referência no setor, gerando rentabilidade compatível com o investimento realizado"
-    },
-    {
-      "id": "4",
-      "title": "NOSSOS VALORES",
-      "desc": "- Integração entre profissionais, clientes e fornecedores; <br /> - Prontidão para mudanças, buscamos a excelência em segurança, meio ambiente e saúde; <br /> - Prontidão para mudanças, visando melhoria continua; <br /> - Respeito a vida, buscamos a excelência em segurança, meio ambiente e saúde; <br /> - Ética e transparência nos nossos negócios."
     }
+    
+ ],
+ "about2": [
+  {
+    "id": "1",
+    "title": "NOSSA MISSÃO",
+    "desc": "Atuar no setor de telecomunicações com responsabilidade social e ambiental, fornecendo serviços na integração à rede mundial de computadores, com excelência."
+  },
+  {
+    "id": "2",
+    "title": "NOSSA VISÃO",
+    "desc": "Ser referência no setor, gerando rentabilidade compatível com o investimento realizado"
+  },
+  {
+    "id": "3",
+    "title": "NOSSOS VALORES",
+    "desc": "- Integração entre profissionais, clientes e fornecedores; <br /> - Prontidão para mudanças, buscamos a excelência em segurança, meio ambiente e saúde; <br /> - Prontidão para mudanças, visando melhoria continua; <br /> - Respeito a vida, buscamos a excelência em segurança, meio ambiente e saúde; <br /> - Ética e transparência nos nossos negócios."
+  }
+
  ]
 }

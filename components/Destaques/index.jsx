@@ -7,25 +7,22 @@ import "./styles.css";
 export default function Destaques() {
   return (
     <>
-      <section id="destaques" className="destaques container">
-        <h2 className="destaques__titulo"></h2>
-        <div className="destaques__painel">
+      <section id="destaques" className="destaques">
+        <div className="destaques-painel">
           <Slider {...settingsImage} className="slider-image-container">
             {highlights.map((destaque) => (
-              <a href="#planos">
-                <figure className="destaques__link">
-                  <img
-                    src={destaque.img}
-                    alt=""
-                    className="destaques__painel-imagem"
-                  />
-                  {/* <figcaption className="destaques__painel-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption> */}
-                </figure>
+              <a key={destaque.id} href="#planos" className="destaques-link">
+                <img
+                  src={destaque.img}
+                  alt=""
+                  className="destaques-painel-imagem"
+                />
+                
               </a>
             ))}
           </Slider>
         </div>
-        {/* <a href="#" className="destaques__botao botao">Receber destaques por email</a> */}
+        {/* <a href="#" className="destaques-botao botao">Receber destaques por email</a> */}
       </section>
     </>
   );

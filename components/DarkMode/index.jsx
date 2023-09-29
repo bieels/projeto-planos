@@ -4,8 +4,8 @@ import Moon from "@mui/icons-material/Brightness3";
 import { useEffect, useState } from "react";
 
 export default function DarkMode() {
-
-  const [active, setActive] = useState(null)
+  const [isActive, setIsActive] = useState(false);
+  const selectedTheme = localStorage.getItem("selectedTheme");
 
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
@@ -17,23 +17,24 @@ export default function DarkMode() {
     localStorage.setItem("selectedTheme", "light");
   };
 
-  const selectedTheme = localStorage.getItem("selectedTheme");
-
-  const toggleTheme = (e) => {
-    if (e.target.checked) setDarkMode();
-    else setLightMode();
+  const toggleTheme = () => {
+    if (isActive) {
+      setLightMode();
+    } else {
+      setDarkMode();
+    }
+    setIsActive(!isActive);
   };
 
- useEffect(() => {
-    if(selectedTheme === "dark") {
-      setActive(false)
-      setDarkMode();
-    } else {
-      setActive(true)
-    }
- }, []);
 
-console.log(selectedTheme)
+  useEffect(() => {
+    if (selectedTheme === "dark") {
+      setIsActive(false);
+      setDarkMode()
+    } else {
+      setIsActive(true);
+    }
+  }, [selectedTheme]);
 
   return (
     <div className="dark_mode">
@@ -42,13 +43,14 @@ console.log(selectedTheme)
         type="checkbox"
         id="darkmode-toggle"
         onChange={toggleTheme}
-        defaultChecked={selectedTheme === "dark"}
+        checked={!isActive}
       />
-      <label className="dark_mode_label" for="darkmode-toggle" onClick={() => setActive(!active)}>
-        {active ? 
-        <Sun sx={{color: "#ffffff"}} className="icon"/> :
-        <Moon sx={{color: "#3b3b3b"}} className="icon"/>  
-      }
+      <label className="dark_mode_label" htmlFor="darkmode-toggle" onClick={toggleTheme}>
+        {isActive ? (
+          <Sun sx={{ color: "#ffffff" }} className="icon" />
+        ) : (
+          <Moon sx={{ color: "#3b3b3b" }} className="icon" />
+        )}
       </label>
     </div>
   );

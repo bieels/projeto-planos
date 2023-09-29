@@ -8,15 +8,15 @@ import { settings } from "../../utils/carousel";
 export default function Planos() {
   return (
     <>
-      <section id="planos" className="planos container">
-      <h2 class="planos__titulo">Nossos Planos</h2>
+      <section id="planos" className="planos">
+      <h2 className="planos-titulo">Nossos Planos</h2>
         <Slider className="slider-container" {...settings}>
           {plans.map((plan) => (
-            <div className="cards">
+            <div key={plan.id} className="cards">
               <article className="data-card">
                 <h3>{plan.title}</h3>
                 <h4>{plan.price}</h4>
-                <div className="plan__desc">
+                <div className="plan-desc">
                   {" "}
                   <p>
                     <svg

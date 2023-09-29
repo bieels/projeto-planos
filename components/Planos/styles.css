@@ -1,176 +1,162 @@
 /* ----- PLANOS ----- */
 
-
 .planos {
-    background: var(--cinza-claro);
-  
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    /* height: 100vh; */
-  
-    box-sizing: border-box;
-  
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    /* border: .75em solid white; */
-    padding: 1em;
-    font-family: 'Open Sans', sans-serif;
-    box-shadow: 0px 1px 50px 10px var(--shadow-section1);
-    transition: transform .45s ease, background .45s ease;
-  }
-  .planos__titulo {
-    color: var(--cinza-escuro);
-    font-weight: 700;
-    font-size: 2.5rem;
-    font-family: var(--montserrat);
-    text-transform: uppercase;
-    text-align: center;
+  background: var(--bg-section-1);
 
-    margin-bottom: 10.25rem;
-    margin-top: -7rem;
+  box-sizing: border-box;
+
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  /* box-shadow: 0px 1px 50px 10px var(--shadow-section1); */
+  transition: transform 0.45s ease, background 0.45s ease;
 }
-  
-  .slider-container {
-    /* background-color: red; */
-    width: 100vw;
-    height: 28.75em;
+.planos-titulo {
+  color: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  text-align: center;
+padding: 0 0 10rem 0;
+}
 
+.slider-container {
+  width: 100vw;
+  height: 28.75em;
+}
+
+
+.data-card {
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* width: 15.75em; */
+  min-width: 13.75em;
+  min-height: 20.75em;
+  overflow: hidden;
+  border-radius: 0.5em;
+  text-decoration: none;
+  margin: 1rem 3rem 1rem 3rem;
+  padding: 2.75em 2.5em;
+  box-shadow: 0 2px 10px 5px #0000002f;
+  transition: all 300ms;
+  user-select: none;
+}
+
+.data-card h3 {
+  color: var(--fonte-preta);
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin: 0 0 0.142857143em;
+  border-bottom: 2px solid var(--verde-dw);
+  transition: color 0.45s ease, border 0.45s ease;
+}
+
+.data-card h4 {
+  color: var(--fonte-preta);
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.777777778em;
+  transition: color 0.45s ease;
+}
+
+.data-card p {
+  opacity: 0;
+  color: var(--fonte-preta);
+  font-weight: 600;
+  line-height: 1.8;
+  transform: translateY(-1em);
+  transition: opacity 0.45s ease, transform 0.5s ease;
+}
+
+.data-card .link-text {
+  display: block;
+  color: var(--fonte-preta);
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: auto 0 0;
+  transition: color 0.45s ease;
+}
+
+.data-card .link-text svg {
+  margin-left: 0.5em;
+  margin-bottom: -3px;
+  transition: transform 0.6s ease;
+}
+
+.data-card .link-text svg path {
+  transition: fill 0.45s ease;
+}
+
+.data-card:hover {
+  background: var(--verde-dw);
+  transform: scale(1.02);
+  box-shadow: 0 2px 10px 5px #00000052;
+}
+
+.data-card:hover h3 {
+  color: var(--fonte-preta);
+  border-bottom-color: var(--preto);
+}
+
+.data-card:hover h4 {
+  color: var(--fonte-preta);
+}
+
+.data-card:hover p {
+  opacity: 1;
+  transform: none;
+}
+
+.data-card:hover .link-text svg {
+  animation: point 1.25s infinite alternate;
+}
+
+.data-card:hover .link-text svg path {
+  fill: var(--fonte-preta);
+}
+
+.plan-desc svg {
+  margin: 0 10px -2px;
+  color: var(--fonte-preta);
+}
+
+@keyframes point {
+  0% {
+    transform: translateX(0);
   }
-  
-  .cards {
-    /* background-color: blue; */
+
+  100% {
+    transform: translateX(0.2em);
   }
-  
+}
+
+@media (max-width: 700px) {
   .data-card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    /* width: 15.75em; */
-    min-width: 13.75em;
-    min-height: 20.75em;
-    overflow: hidden;
-    border-radius: .5em;
-    text-decoration: none;
-    background: var(--plano-branco);
-    margin: 1rem 3rem 1rem 3rem;
-    padding: 2.75em 2.5em;
-    box-shadow: 0 2px 10px 5px #0000002f;
-    transition: all 300ms;
-    user-select: none;
+    margin: 1rem 7rem 1rem 7rem;
   }
-  
-  .data-card h3 {
-    color: var(--fonte-preta);
-    font-size: 3em;
-    font-weight: 600;
-    line-height: 1;
-    padding-bottom: .5em;
-    margin: 0 0 0.142857143em;
-    border-bottom: 2px solid var(--verde-dw);
-    transition: color .45s ease, border .45s ease;
-  }
-  
-  .data-card h4 {
-    color: var(--fonte-preta);
-    text-transform: uppercase;
-    font-size: 1.125em;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.1em;
-    margin: 0 0 1.777777778em;
-    transition: color .45s ease;
-  }
-  
-  .data-card p {
-    opacity: 0;
-    color: var(--fonte-preta);
-    font-weight: 600;
-    line-height: 1.8;
-    transform: translateY(-1em);
-    transition: opacity .45s ease, transform .5s ease;
-  }
-  
-  .data-card .link-text {
-    display: block;
-    color: var(--fonte-preta);
-    font-size: 1.125em;
-    font-weight: 600;
-    line-height: 1.2;
-    margin: auto 0 0;
-    transition: color .45s ease;
-  }
-  
-  .data-card .link-text svg {
-    margin-left: .5em;
-    margin-bottom: -3px;
-    transition: transform .6s ease;
-  }
-  
-  .data-card .link-text svg path {
-    transition: fill .45s ease;    
-  }
-  
-  .data-card:hover {
-    background: var(--verde-dw);
-    transform: scale(1.02);
-    box-shadow: 0 2px 10px 5px #00000052;
-  }
-  
-  .data-card:hover h3 {
-    color: var(--fonte-preta);
-    border-bottom-color: var(--preto);
-  }
-  
-  .data-card:hover h4 {
-    color: var(--fonte-preta);
-  }
-  
-  .data-card:hover p {
-    opacity: 1;
-    transform: none;
-  }
-    
-  .data-card:hover .link-text svg {
-    animation: point 1.25s infinite alternate;
-  }
-  
-  .data-card:hover .link-text svg path {
-    fill: var(--fonte-preta);
-  }
+}
 
-  .plan__desc svg {
-    margin: 0 10px -2px;
-    color: var(--fonte-preta);
+@media (max-width: 520px) {
+  .data-card {
+    margin: 1rem 2rem 1rem 2rem;
   }
-  
-  @keyframes point {
-    0% {
-      transform: translateX(0);
-    }
-  
-    100% {
-      transform: translateX(.2em);
-    }
-  }
+}
 
-  @media (max-width: 700px) {
-    .data-card {
-      margin: 1rem 7rem 1rem 7rem;
-    }
+@media (max-width: 480px) {
+  .data-card {
+    margin: 1rem 1rem 1rem 1rem;
   }
-
-  @media (max-width: 520px) {
-    .data-card {
-      margin: 1rem 2rem 1rem 2rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .data-card {
-      margin: 1rem 1rem 1rem 1rem;
-    }
-  }
+}

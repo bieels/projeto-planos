@@ -3,20 +3,29 @@
 .sobre {
     padding-top: 6rem;
     padding-bottom: 6rem;
-    background: var(--bg-branco);
+    background: var(--bg-section-2);
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    box-shadow: 0px 1px 50px 10px var(--shadow-section2);
+    justify-content: center;
+    /* box-shadow: 0px 1px 50px 10px var(--shadow-section2); */
     transition: transform .45s ease, background .45s ease;
     user-select: none;
     overflow: hidden;
 
 }
 
-.sobre__titulo {
-    color: var(--cinza-escuro);
+.sobre-conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sobre-titulo {
+    color: var(--fonte-titulo);
     font-weight: 700;
     font-size: 2.5rem;
     font-family: var(--montserrat);
@@ -26,26 +35,25 @@
     margin-bottom: 1.25rem;
 }
 
-.sobre__texto {
-    width: 500px;
-    text-align: center;
-    line-height: normal;
+.sobre-texto {
+    max-width: 500px;
+    flex-wrap: wrap;
     font-size: 1.4rem;
     margin-bottom: 3rem;
 
 }
-
-.sobre__conteudo p{
+.sobre-conteudo p{
     color: var(--fonte-cinza);
 }
 
-.sobre__texto--destaque {
-    color: var(--cinza-escuro);
+
+.sobre-texto--destaque {
+    color: var(--fonte-titulo);
     font-weight: 700;
     margin-bottom: 3rem;
 }
 
-.sobre__plataformas {
+.sobre-plataformas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -53,7 +61,7 @@
     margin-bottom: 1rem;
 }
 
-.sobre__imagem {
+.sobre-imagem {
     width: 100vw;
     max-width: 300px;
 
@@ -64,43 +72,17 @@
     
 }
 
-.item__titulo svg {
+.item-titulo svg {
     margin: 0 5px -5px;
 }
 
-@media screen and (max-width: 1024px) {
-    .sobre {
-        display: flex;
+
+@media screen and (max-width: 1024px){
+    .sobre-conteudo {
         flex-direction: column;
     }
-
-    .sobre__conteudo {
-        margin-right: 3rem;
-        
-    }
-
-    .sobre__titulo {
-        text-align: left;
-        margin-left: 0;
-    }
-
-    .sobre__texto--divisao {
-        /* border-bottom: 1px solid var(--cinza-medio); */
-
-        padding-bottom: 1.5rem;
-    }
-
-    .sobre__texto {
-        margin-left: 0;
+    .sobre-imagem {
+        margin: 0;
     }
     
-
-    .sobre__imagem {
-        display: block;
-        
-    }
 }
-
-/* @media screen and (max-width: 480px){
-    
-} */

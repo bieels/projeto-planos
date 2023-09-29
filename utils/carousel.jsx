@@ -41,6 +41,8 @@ export const settingsImage = {
       settings: {
         slidesToShow: 1.3,
         slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
       }
     },
     {
@@ -48,6 +50,8 @@ export const settingsImage = {
       settings: {
         slidesToShow: 0.9,
         slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
       }
     },
     {
@@ -56,6 +60,8 @@ export const settingsImage = {
         centerPadding: "-20px",
         slidesToShow: 1,
         slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
       }
     }
   ]
