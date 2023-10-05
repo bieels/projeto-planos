@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./styles.css";
-import { AppContext } from "../../src/context/AppContext";
+import { AppContext } from "../../context/AppContext";
 
 export default function Modal({ children }) {
 

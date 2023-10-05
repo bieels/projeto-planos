@@ -19,6 +19,11 @@ nav {
 nav a {
   font-family: var(--montserrat);
   text-transform: uppercase;
+  color: #fff;
+}
+
+nav a:hover {
+  color: var(--verde-dw);
 }
 
 .logo img {
@@ -64,7 +69,7 @@ nav a {
 
 .btn {
   display: inline-block;
-  color: var(--fonte-branca);
+  color: var(--fonte-preta);
   padding: 32px;
   position: relative;
   letter-spacing: 1px;
@@ -186,7 +191,7 @@ nav a {
   .logo img {
     width: 160px;
     margin-top: 5px;
-    opacity: 50%;
+    /* opacity: 50%; */
   }
 
   nav {

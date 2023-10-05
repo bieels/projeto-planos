@@ -6,7 +6,7 @@
     --fonte-titulo: #4F4C4C;
     --verde-dw: #42ab1c;
     
-    --fonte-branca: #ffffff;
+    --fonte-preta: #ffffff;
     --fonte-cinza: #667;
     --fonte-preta: #000000;
     --bg-rodape: #000000;
@@ -52,7 +52,7 @@ body {
 }
 
 a {
-    color: var(--fonte-branca);
+    color: var(--fonte-preta);
     text-decoration: none;
     transition: 0.3s;
   }
@@ -74,7 +74,7 @@ a {
 
     padding: 1rem 2rem;
 
-    border: 3px solid var(--fonte-branca);
+    border: 3px solid #ffffff;
     border-radius: 5px;
 }
 

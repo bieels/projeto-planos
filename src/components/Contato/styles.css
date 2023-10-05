@@ -1,0 +1,156 @@
+/* ----- CONTATO ----- */
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: var(--bg-section-2);
+  transition: color 0.45s ease;
+  /* box-shadow: 0px 1px 50px 10px var(--shadow-section2); */
+  user-select: none;
+  transition: transform 0.45s ease, background 0.45s ease;
+  overflow: hidden;
+}
+
+.contato-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 200px;
+}
+
+.contato p {
+  color: var(--fonte-titulo);
+}
+.contato-titulo {
+  color: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+.social-content {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+  
+  border-radius: 10px;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.social-items {
+  display: flex;
+  gap: 15px;
+  scale: 1.7;
+}
+
+.contato-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 1px 2px var(--fonte-preta);
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.contato-item:hover .contato-icon {
+  box-shadow: 0 0 1px 2px var(--verde-dw);
+}
+
+
+.contato-content {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bg-card);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 5px #0000002f;
+
+}
+
+/* .contato-informacoes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  background-color: blue;
+} */
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 30px 20px;
+}
+
+.social-title {
+  color: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 1.25rem;
+}
+
+.endereco-maps {
+  width: 400px;
+  height: 550px;
+  border: 0;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .endereco {
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+  }
+  .endereco-maps {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .contato-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contato-content {
+    flex-direction: column;
+  }
+  .endereco-maps{
+    display: none;
+  }
+  .social-content {
+    width: 400px;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .social-content {
+    width: 330px;
+  }
+
+}

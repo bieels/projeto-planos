@@ -2,7 +2,7 @@ import DarkMode from "../DarkMode";
 import dwlogo from "/img/dwlogo3.png";
 import "./styles.css";
 import { useState, useContext, useEffect } from "react";
-import { AppContext } from "../../src/context/AppContext"
+import { AppContext } from "../../context/AppContext"
 
 export default function NavBar () {
   const { active, setActive } = useContext(AppContext);
@@ -18,7 +18,7 @@ export default function NavBar () {
     <>
       <header>
         <nav style={{
-        background: scroll > 100 ? 'black' : 'transparent',
+        background: scroll > 100 ? 'var(--bg-nav)' : 'transparent',
         boxShadow: scroll > 100 ? 'rgba(0, 0, 0, 0.50) 0px 7px 20px' : 'none'
       }}>
           <a className="logo" href="/">

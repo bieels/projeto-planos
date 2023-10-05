@@ -8,8 +8,8 @@ export default function Sobre () {
             {about.map((about) => (   
                 <div key={about.id} className="sobre-conteudo">
                 <article>
-                <p className="sobre-texto">
                 <h2 className="sobre-titulo">Sobre Nós</h2>
+                <p className="sobre-texto">
                    {about.text}
                 </p>
                 <p className="sobre-texto sobre-texto--destaque sobre-texto--divisao">

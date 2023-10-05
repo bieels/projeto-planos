@@ -4,8 +4,12 @@ import "./styles.css";
 import { plans } from "../../Data.json";
 import Slider from "react-slick";
 import { settings } from "../../utils/carousel";
+import { AppContext } from "../../context/AppContext";
+import { useContext } from "react";
+
 
 export default function Planos() {
+  const { setShowModal } = useContext(AppContext);
   return (
     <>
       <section id="planos" className="planos">
@@ -70,8 +74,8 @@ export default function Planos() {
                     {plan.desc3}
                   </p>
                 </div>
-                <a href="#home" className="link-text" onClick={() => setShowModal(true)}>
-                  Assine Agora
+                <a href="#planos" className="link-text" onClick={() => setShowModal(true)}>
+                  Confira Agora
                   <svg
                     width="25"
                     height="16"

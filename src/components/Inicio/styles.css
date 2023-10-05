@@ -8,7 +8,7 @@
   gap: 200px;
   padding-top: 100px;
 
-  color: var(--fonte-branca);
+  color: #fff;
   text-align: center;
   overflow: hidden;
   background: rgb(38, 95, 43);
@@ -51,6 +51,7 @@
 
 .chamada-botao {
   width: 100%;
+  color: #fff;
 }
 
 @media screen and (max-width: 1100px) {

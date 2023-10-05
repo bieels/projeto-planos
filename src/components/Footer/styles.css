@@ -17,6 +17,12 @@
 .rodape a {
     font-family: Lato, sans-serif;
     text-transform: uppercase;
+    font-family: var(--montserrat);
+    color: #fff;
+}
+
+.rodape a:hover {
+    color: var(--verde-dw);
 }
 
 .rodape-social {
@@ -28,7 +34,6 @@
 }
 
 .rodape-navegacao {
-    color: var(--fonte-branca);
     display: flex;
     gap: 20px;
     padding: 2rem 0;
@@ -45,7 +50,7 @@
 }
 
 .copy {
-    color: var(--fonte-branca);
+    color: #fff;
     font-size: 15px;
 }
 

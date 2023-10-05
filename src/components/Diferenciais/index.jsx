@@ -1,4 +1,3 @@
-import { about } from "../../Data.json";
 import "./styles.css";
 import React from 'react'
 

@@ -19,7 +19,7 @@
 }
 
 .modal-content {
-    background: white;
+    background: var(--bg-card);
     position: relative;
     padding: 2rem 2rem;
     z-index: 1001;
