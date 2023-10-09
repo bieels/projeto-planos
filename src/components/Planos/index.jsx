@@ -32,7 +32,6 @@ export default function Planos() {
     setSelectedPlan(selectedPlan);
   };
   
-  console.log(plans)
 
   return (
     <>
