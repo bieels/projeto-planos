@@ -1,4 +1,4 @@
-import { about } from "../../data/Data.json";
+import { about } from "../../data/db.json";
 import './styles.css';
 export default function Sobre () {
     return (

@@ -1,7 +1,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { highlights } from "../../data/Data.json";
+import { highlights } from "../../data/db.json";
 import { settingsImage } from "../../utils/carousel";
 import "./styles.css";
 export default function Destaques() {

@@ -16,10 +16,11 @@ export default function Planos() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/src/data/Data.json");
+        const response = await fetch("http://localhost:3000/plans");
         const jsonData = await response.json();
-        const plansData = jsonData.plans || [];
+        const plansData = jsonData || [];
         setPlans(plansData);
+        console.log(jsonData)
       } catch (error) {
         console.error('Erro ao carregar os dados:', error);
       }
