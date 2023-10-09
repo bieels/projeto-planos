@@ -10,12 +10,15 @@ import Modal from "./components/Modal";
 
 import "./App.css";
 import { AppProvider } from "./context/AppContext";
+import PlanoPopup from "./components/PlanoPopup";
 
 function App() {
   return (
     <>
       <AppProvider>
-        <Modal children={<h1>Test</h1>} />
+        <Modal>
+          <PlanoPopup />
+        </Modal>
         <NavBar />
         <Inicio />
         <Destaques />

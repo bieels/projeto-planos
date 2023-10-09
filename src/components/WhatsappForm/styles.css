@@ -98,6 +98,11 @@
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s;
+  margin-top: 60px;
+}
+
+.btn-icon {
+  margin: 0 5px -5px 0;
 }
 
 .WhatsAppForm button:hover {

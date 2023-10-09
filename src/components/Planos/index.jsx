@@ -1,15 +1,39 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./styles.css";
-import { plans } from "../../Data.json";
 import Slider from "react-slick";
 import { settings } from "../../utils/carousel";
 import { AppContext } from "../../context/AppContext";
 import { useContext } from "react";
+import { useState, useEffect } from "react";
 
 
 export default function Planos() {
-  const { setShowModal } = useContext(AppContext);
+  const { setShowModal, selectedPlan, setSelectedPlan } = useContext(AppContext);
+  const [plans, setPlans] = useState([]);
+  
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/src/data/Data.json");
+        const jsonData = await response.json();
+        const plansData = jsonData.plans || [];
+        setPlans(plansData);
+      } catch (error) {
+        console.error('Erro ao carregar os dados:', error);
+      }
+    };
+    fetchData();
+  }, []);
+  
+  const handlePlanSelect = (planId) => {
+    const selectedPlan = plans.find(plan => plan.id === planId);
+    setSelectedPlan(selectedPlan);
+    console.log(selectedPlan)
+  };
+  
+
   return (
     <>
       <section id="planos" className="planos">
@@ -74,7 +98,7 @@ export default function Planos() {
                     {plan.desc3}
                   </p>
                 </div>
-                <a href="#planos" className="link-text" onClick={() => setShowModal(true)}>
+                <a href="#planos" className="link-text" onClick={() => {setShowModal(true); handlePlanSelect(plan.id)}}>
                   Confira Agora
                   <svg
                     width="25"

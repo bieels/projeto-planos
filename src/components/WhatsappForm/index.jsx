@@ -9,22 +9,16 @@ export default function WhatsAppForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Formate a mensagem com o nome
-    const formattedMessage = `Olá ${name}, ${message}`;
+    const formattedMessage = `Meu nome é ${name}. ${message}`;
 
-    // Encode a mensagem formatada
     const encodedMessage = encodeURIComponent(formattedMessage);
 
-    // Número de telefone do destinatário (substitua pelo número desejado)
     const phoneNumber = "COLOQUE_O_NUMERO_AQUI";
 
-    // Crie a URL do WhatsApp
     const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
-    // Abra a URL do WhatsApp em uma nova aba
     window.open(whatsappURL, "_blank");
 
-    // Limpe os campos de entrada
     setName("");
     setMessage("");
   };
@@ -32,7 +26,7 @@ export default function WhatsAppForm() {
   return (
     <section className="WhatsAppForm">
       <div className="form-group">
-        <h2 className="social-title">Envie uma Mensagem</h2>
+        <h2 className="social-title">Envie uma Mensagem <br />para nós</h2>
         <form onSubmit={handleSubmit}>
           <div className="group">
             <input
@@ -61,7 +55,7 @@ export default function WhatsAppForm() {
           </div>
 
           <button type="submit" className="submit-button">
-            <WhatsAppIcon />
+            <WhatsAppIcon className="btn-icon"/>
             Enviar Mensagem
           </button>
         </form>
