@@ -7,6 +7,7 @@ import Diferenciais from "./components/Diferenciais";
 import Contato from "./components/Contato";
 import Footer from "./components/Footer";
 import Modal from "./components/Modal";
+import PlanoPopup from "./components/PlanoPopup";
 
 import "./App.css";
 import { AppProvider } from "./context/AppContext";
@@ -15,8 +16,7 @@ function App() {
   return (
     <>
       <AppProvider>
-        <Modal>
-        </Modal>
+        <Modal children={<PlanoPopup />}/>
         <NavBar />
         <Inicio />
         <Destaques />
