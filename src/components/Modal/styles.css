@@ -19,9 +19,6 @@
 }
 
 .modal-content {
-    background: var(--bg-card);
     position: relative;
-    padding: 2rem 2rem;
     z-index: 1001;
-    border-radius: 10px;
 }

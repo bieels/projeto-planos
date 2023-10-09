@@ -66,7 +66,7 @@ export const settingsImage = {
 
 export const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -86,7 +86,7 @@ export const settings = {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 1
         }
       },
       {
@@ -94,7 +94,7 @@ export const settings = {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 1
         }
       }
     ]

@@ -6,21 +6,20 @@ import { settings } from "../../utils/carousel";
 import { AppContext } from "../../context/AppContext";
 import { useContext } from "react";
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 
 export default function Planos() {
-  const { setShowModal, selectedPlan, setSelectedPlan } = useContext(AppContext);
+  const { setShowModal, setSelectedPlan } = useContext(AppContext);
   const [plans, setPlans] = useState([]);
   
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://json-server-dw.vercel.app/plans");
-        const jsonData = await response.json();
-        const plansData = jsonData || [];
+        const response = await axios.get("https://json-server-dw.vercel.app/plans");
+        const plansData = response.data || [];
         setPlans(plansData);
-        console.log(jsonData)
       } catch (error) {
         console.error('Erro ao carregar os dados:', error);
       }
@@ -31,9 +30,9 @@ export default function Planos() {
   const handlePlanSelect = (planId) => {
     const selectedPlan = plans.find(plan => plan.id === planId);
     setSelectedPlan(selectedPlan);
-    console.log(selectedPlan)
   };
   
+  console.log(plans)
 
   return (
     <>
