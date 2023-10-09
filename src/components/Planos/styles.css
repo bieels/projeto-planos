@@ -146,13 +146,13 @@ padding: 0 0 10rem 0;
 
 @media (max-width: 768px) {
   .data-card {
-    margin: 0 150px;
+    margin: 5px 150px;
   }
 }
 
 
 @media (max-width: 600px) {
   .data-card {
-    margin: 0 50px;
+    margin: 5px 50px;
   }
 }
