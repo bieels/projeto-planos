@@ -4,7 +4,6 @@ import Inicio from "./components/Inicio";
 import Planos from "./components/Planos";
 import Sobre from "./components/Sobre";
 import Diferenciais from "./components/Diferenciais";
-import PlanoPopup from "./components/PlanoPopup";
 import Contato from "./components/Contato";
 import Footer from "./components/Footer";
 import Modal from "./components/Modal";
@@ -17,7 +16,6 @@ function App() {
     <>
       <AppProvider>
         <Modal>
-          <PlanoPopup />
         </Modal>
         <NavBar />
         <Inicio />
