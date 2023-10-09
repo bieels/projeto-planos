@@ -16,7 +16,7 @@ export default function Planos() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/plans");
+        const response = await fetch("https://projetodw.vercel.app/plans");
         const jsonData = await response.json();
         const plansData = jsonData || [];
         setPlans(plansData);
