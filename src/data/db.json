@@ -8,7 +8,9 @@
       "desc2": "Franquia Ilimitada",
       "desc3": "Upload Sob Consulta",
       "desc4": "",
-      "desc5": ""
+      "appbasico": false,
+      "desc5": "",
+      "apppremium": false
     },
     {
       "id": "2",
@@ -18,7 +20,9 @@
       "desc2": "Franquia Ilimitada",
       "desc3": "Upload Sob Consulta",
       "desc4": "+1 App Básico",
-      "desc5": ""
+      "appbasico": true,
+      "desc5": "",
+      "apppremium": false
     },
     {
       "id": "3",
@@ -28,7 +32,9 @@
       "desc2": "Franquia Ilimitada",
       "desc3": "Upload Sob Consulta",
       "desc4": "+1 App Básico",
-      "desc5": "+1 App Premium"
+      "appbasico": true,
+      "desc5": "+1 App Premium",
+      "apppremium": true
     },
     {
       "id": "4",
@@ -38,7 +44,9 @@
       "desc2": "Franquia Ilimitada",
       "desc3": "Upload Sob Consulta",
       "desc4": "+2 App Básicos",
-      "desc5": "+1 App Premium"
+      "appbasico": true,
+      "desc5": "+1 App Premium",
+      "apppremium": true
     }
   ],
   "highlights": [

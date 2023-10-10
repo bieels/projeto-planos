@@ -1,5 +1,6 @@
 .dark_mode {
-    margin: 0 -10px 0 10px;
+  display: flex;
+  margin-bottom: 2px;
 }
 
 .dark_mode_label {
@@ -13,17 +14,7 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.dark_mode_label:after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 3px;
-  left: 3px;
 
-  border-radius: 180px;
-  transition: 0.3s;
-}
 .dark_mode_input {
   width: 0;
   height: 0;
@@ -42,7 +33,5 @@
 
 @media (max-width: 1700px) {
   .dark_mode {
-    margin: -8px -50px 0 10px;
-
   }
 }

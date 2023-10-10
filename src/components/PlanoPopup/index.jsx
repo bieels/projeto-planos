@@ -20,9 +20,9 @@ export default function PlanoPopup() {
             <p>{selectedPlan.desc2}</p>
             <p>{selectedPlan.desc3}</p>
             <p>{selectedPlan.desc4}</p>
-            <AppBasico />
+           {selectedPlan.appbasico ?  <AppBasico /> : ""}
             <p>{selectedPlan.desc5}</p>
-            <AppPremium />
+            {selectedPlan.apppremium ?  <AppPremium /> : ""}
           </article>
         </div>
         </>

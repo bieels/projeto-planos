@@ -29,7 +29,6 @@ nav a:hover {
 .logo img {
   width: 220px;
   margin-top: 5px;
-  padding-right: 73px;
   transition: all 300ms ease;
 }
 
@@ -38,16 +37,19 @@ nav a:hover {
 }
 
 .btn-end {
-  display: inline-flex;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
   transition: all 300ms ease;
-  margin-top: 10px;
 }
 
 .nav-list {
+  display: flex;
+  align-items: center;
   list-style: none;
   display: flex;
   font-size: 22px;
-  margin-right: 11%;
 }
 
 .nav-list li {
@@ -62,30 +64,21 @@ nav a:hover {
   transition: 300ms;
 }
 
-.cliente {
-  margin-top: 19px;
-  transition: all 300ms;
-}
 
 .btn {
-  display: inline-block;
+  display: flex;
   color: var(--fonte-preta);
-  padding: 32px;
-  position: relative;
   letter-spacing: 1px;
 }
 
 .btn-circle,
 .btn-text,
 .btn-white-circle {
-  position: absolute;
 }
 
 .btn-circle {
   display: grid;
   place-items: center;
-  top: 0;
-  left: 0;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -97,7 +90,7 @@ nav a:hover {
 .btn-white-circle {
   top: 32%;
   left: 31%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-40px, 0) scale(0);
   width: 42px;
   height: 42px;
   border-radius: 100%;
@@ -128,7 +121,7 @@ nav a:hover {
 }
 
 .btn:hover .btn-white-circle {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-40px, 0) scale(1);
 }
 
 /* .btn:hover .btn-text {
@@ -141,17 +134,11 @@ nav a:hover {
     padding: 0;
   }
   .btn-end {
-    margin-right: -100px;
-    width: 50px;
   }
 
   .btn-end {
-    width: 100px;
-    margin: 0;
-    margin-top: 18px;
   }
   .cliente {
-    margin-top: 12px;
   }
 }
 
@@ -161,7 +148,6 @@ nav a:hover {
   }
 
   .logo img {
-    margin-right: 0px;
   }
 
   .nav-list li {
@@ -169,23 +155,16 @@ nav a:hover {
   }
 
   .btn-end {
-    width: 10%;
-    width: 120px;
-    margin: 0;
-    margin-top: 18px;
+
   }
 }
 
 @media (max-width: 480px) {
   .btn-end {
-    width: 200px;
-    margin-right: -60px;
-    margin-top: 13px;
     scale: .8;
   }
 
   .cliente {
-    margin-top: 10px;
   }
 
   .logo img {
