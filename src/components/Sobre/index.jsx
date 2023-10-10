@@ -34,20 +34,11 @@ export default function Sobre() {
             </article>
             <img
               src="img/dwsolutionsinternet-03.jpg"
-              alt="Sobre a Apeperia"
+              alt="Sobre a DW Solutions"
               className="sobre-imagem"
             />
           </div>
         ))}
-
-        {/* <ul className="diferenciais-lista">
-            {about.map((about) => (           
-                <li key={about.id} className="diferenciais-item diferenciais-item--tempo">
-                <h2 className="item-titulo">{about.title}</h2>
-                <p className="item-texto" dangerouslySetInnerHTML={{ -html: about.desc }}/>
-            </li>
-            ))}
-           </ul> */}
       </section>
     </>
   );

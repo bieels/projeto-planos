@@ -1,0 +1,14 @@
+.apps-premium-container {
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.apps-premium-container img {
+    width: 40px;
+    border-radius: 10px;
+}
