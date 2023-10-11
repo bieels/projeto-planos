@@ -4,8 +4,8 @@ import "./styles.css";
 import Slider from "react-slick";
 import { settings } from "../../utils/carousel";
 import { AppContext } from "../../context/AppContext";
-import { useContext } from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 
@@ -97,7 +97,7 @@ export default function Planos() {
                     {plan.desc3}
                   </p>
                 </div>
-                <a href="#planos" className="link-text" onClick={() => {setShowModal(true); handlePlanSelect(plan.id)}}>
+                <Link className="link-text" onClick={() => {setShowModal(true); handlePlanSelect(plan.id)}}>
                   Confira Agora
                   <svg
                     width="25"
@@ -113,7 +113,7 @@ export default function Planos() {
                       fill="var(--fonte-preta)"
                     />
                   </svg>
-                </a>
+                </Link>
               </article>
             </div>
           ))}

@@ -3,6 +3,7 @@ import { settings } from "../../utils/carousel";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "./styles.css";
 
@@ -147,8 +148,7 @@ export default function CrudPage() {
                   <p>{item.desc4}</p> <br />
                   <p>{item.desc5}</p>
                 </div>
-                <a
-                  href="#planos"
+                <Link
                   className="link-text"
                   onClick={() => handleEdit(item)}
                 >
@@ -167,7 +167,7 @@ export default function CrudPage() {
                       fill="var(--fonte-preta)"
                     />
                   </svg>
-                </a>
+                </Link>
               </article>
             </div>
           ))}
