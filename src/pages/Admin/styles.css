@@ -1,0 +1,133 @@
+.crud-page {
+  background: var(--bg-section-2);
+}
+.crud-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: var(--bg-section-2);
+}
+
+.crud-container h2 {
+  color: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -20px;
+  padding-bottom: 3rem ;
+}
+
+.crud-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.crud-container li {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.crud-container strong {
+  font-size: 18px;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.crud-container button {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.crud-container button:hover {
+  background-color: var(--verde-dw);
+  color: #000000;
+}
+
+.crud-container .form-container {
+  background-color: var(--bg-card);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 5px #0000002f;
+
+}
+
+.crud-container .input-container {
+  margin-bottom: 10px;
+}
+
+.crud-container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--fonte-titulo);
+}
+
+.crud-container input[type="text"],
+.crud-container input[type="checkbox"] {
+  width: 300px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--bg-section-2);
+  color: var(--fonte-preta);
+}
+
+.crud-container input[type="checkbox"] {
+  width: auto;
+  margin-left: 5px;
+}
+
+.crud-container .edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.925);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.crud-container .edit-modal-content {
+  background-color: var(--bg-card);
+  border: 0;
+  border-radius: 5px;
+  padding: 50px ;
+  max-width: 400px;
+  text-align: start;
+}
+
+.crud-container .edit-modal h2 {
+  /* font-size: 20px; */
+  padding: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .crud-container .form-container {
+    padding: 50px;
+  }
+}
