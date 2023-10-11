@@ -3,6 +3,7 @@ import dwlogo from "/img/dwlogo3.png";
 import "./styles.css";
 import { useState, useContext, useEffect } from "react";
 import { AppContext } from "../../context/AppContext";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const { active, setActive } = useContext(AppContext);
@@ -35,7 +36,7 @@ export default function NavBar() {
             ))}
           </ul>
           <div className="btn-end">
-            <a href="#" className="btn">
+            <Link to="/admin" className="btn">
               <span className="btn-circle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +62,7 @@ export default function NavBar() {
                   <path d="M17.104 5.072l-4.138-4.014L14.056 0l6 5.82-6 5.82-1.09-1.057 4.138-4.014H0V5.072h17.104z"></path>
                 </svg>
               </span>
-            </a>
+            </Link>
             <DarkMode />
           </div>
         </nav>
