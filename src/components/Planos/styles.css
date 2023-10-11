@@ -134,6 +134,10 @@
   color: var(--fonte-preta);
 }
 
+.link-text {
+  padding-top: 20px;
+}
+
 @keyframes point {
   0% {
     transform: translateX(0);
