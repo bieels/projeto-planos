@@ -10,6 +10,10 @@
   background: var(--bg-section-2);
 }
 
+.edit {
+  height: 400px !important;
+}
+
 .crud-container h2 {
   color: var(--fonte-titulo);
   font-weight: 700;

@@ -3,18 +3,14 @@ import dwlogo from "/img/dwlogo3.png";
 import "./styles.css";
 import { useState, useContext, useEffect } from "react";
 import { AppContext } from "../../context/AppContext";
-import { Link } from "react-router-dom";
+import { Link , useLocation } from "react-router-dom";
 
 export default function NavBar() {
-  const { active, setActive } = useContext(AppContext);
-  const [scroll, setScroll] = useState(0);
-  useEffect(() => {
-    if (scroll < 200) {
-      window.addEventListener("scroll", () => setScroll(window.scrollY));
-    } else {
-      return;
-    }
-  }, [scroll]);
+  const { scroll } = useContext(AppContext);
+  const location = useLocation();
+
+  const isAdminPage = location.pathname === "/admin";
+
   return (
     <>
       <header>
@@ -30,9 +26,11 @@ export default function NavBar() {
           </a>
           <ul className="nav-list">
             {NAVBAR_LINK.map((item, key) => (
+             (!isAdminPage && (
               <li key={key}>
-                <a href={`/${item.path}`}>{item.name}</a>
-              </li>
+                  <a href={`/${item.path}`}>{item.name}</a>
+                </li>
+             )  )
             ))}
           </ul>
           <div className="btn-end">

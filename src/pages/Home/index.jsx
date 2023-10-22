@@ -16,7 +16,6 @@ export default function Home() {
     <>
       <AppProvider>
         <Modal children={<PlanoPopup />}/>
-        <Inicio />
         <Destaques />
         <Sobre />
         {/* <Diferenciais /> */}

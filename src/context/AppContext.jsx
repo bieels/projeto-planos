@@ -1,11 +1,21 @@
-import { useState, createContext } from "react";
+import { useState, createContext, useEffect } from "react";
+
 
 export const AppContext = createContext({});
 
 export const AppProvider = ({ children }) => {
   const [selectedPlan, setSelectedPlan] = useState(null);
   const [showModal, setShowModal] = useState(false);
-  const [active, setActive] = useState("");
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    if (scroll < 200) {
+      window.addEventListener("scroll", () => setScroll(window.scrollY));
+    } else {
+      return;
+    }
+  }, [scroll]);
+
 
   return (
     <AppContext.Provider
@@ -13,7 +23,9 @@ export const AppProvider = ({ children }) => {
         showModal,
         setShowModal,
         selectedPlan,
-        setSelectedPlan
+        setSelectedPlan,
+        scroll,
+        setScroll
       }}
     >
       {children}

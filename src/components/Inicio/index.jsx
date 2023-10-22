@@ -1,15 +1,27 @@
 import './styles.css';
+import { useLocation } from 'react-router-dom';
 
 export default function Inicio () {
+
+    const location = useLocation();
+
+
+  const isAdminPage = location.pathname === "/admin";
+
+
     return (
         <>
             <section id="home" className="chamada">
                 <img className="background-chamada" src="img/personBackground.png" alt="Background DW Solutions" />
-            <div className="chamada-content">
+            {!isAdminPage ? (<div className="chamada-content">
             <h1 className="chamada-titulo">Seja Bem Vindo a <br/> DW Solutions!</h1>
             <p className="chamada-texto">A melhor Banda Larga da cidade!</p>
             <a href="#planos" className="chamada-botao botao">Conheça os planos</a>
-            </div>
+            </div>) : (<div className="chamada-content">
+            <h1 className="chamada-titulo">Seja Bem Vindo a <br/> DW Solutions!</h1>
+            <p className="chamada-texto">Área administrativa do site.</p>
+            
+            </div>)}
         </section>
         </>
     );

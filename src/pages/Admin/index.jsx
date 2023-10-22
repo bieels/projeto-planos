@@ -57,7 +57,6 @@ export default function CrudPage() {
       setItems([...items, newItem]);
       clearForm();
     } catch (error) {
-      console.error("Error creating item: ", error);
     }
   };
 
@@ -101,7 +100,6 @@ export default function CrudPage() {
       clearForm();
     } catch (error) {
       setShowEditModal(false);
-      console.error("Error editing item: ", error);
     }
   };
 
@@ -113,7 +111,6 @@ export default function CrudPage() {
       clearForm();
     } catch (error) {
       setShowEditModal(false);
-      console.error("Error deleting item: ", error);
     }
   };
 
@@ -137,7 +134,7 @@ export default function CrudPage() {
         <Slider className="slider-container" {...settings}>
           {items.map((item) => (
             <div key={item.id} className="cards">
-              <article className="data-card">
+              <article className="data-card edit">
                 <h3>{item.title}</h3>
                 <h4>{item.price}</h4>
                 <div className="plan-desc">

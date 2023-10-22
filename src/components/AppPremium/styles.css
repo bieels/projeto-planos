@@ -4,11 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 20px;
+    padding: 5px;
 }
 
 .apps-premium-container img {
-    width: 40px;
+    width: 32px;
     border-radius: 10px;
 }

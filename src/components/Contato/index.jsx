@@ -9,7 +9,6 @@ export default function Contato() {
   return (
     <>
       <section id="contato" className="contato">
-        {/* <h2 className="contato-titulo">Contato</h2> */}
         <div className="contato-container">
           <WhatsAppForm />
           <div className="contato-content">
@@ -17,7 +16,7 @@ export default function Contato() {
               <h2 className="social-title">Nosso Contato</h2>
               <article className="contato-informacoes">
                 <a className="contato-item" href="tel:+557131992109">
-                 <div className="contato-icon"><LocalPhoneIcon /></div> (71) 3199-2109
+                 <div className="contato-icon"><LocalPhoneIcon /></div>(71) 3199-2109
                 </a>
                 <a
                   className="contato-item"

@@ -6,6 +6,7 @@ import { AppProvider } from "./context/AppContext";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import CrudPage from "./pages/Admin";
+import Inicio from "./components/Inicio";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AppProvider>
         <BrowserRouter>
           <NavBar />
+          <Inicio />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/admin" element={<CrudPage />} />
