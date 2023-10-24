@@ -15,6 +15,8 @@
   --bg-section-1: #dfe3e5;
   --bg-section-2: #fff;
 
+  --button-color: #ffffff;
+
   --shadow-section1: rgba(41, 41, 41, 0.247);
   --shadow-section2: rgba(48, 48, 48, 0.212);
 
@@ -30,6 +32,7 @@
   --bg-section-1: #131313;
   --bg-card: #202020;
   --bg-rodape: #131313;
+  --button-color: #3d3d3d;
   --fonte-titulo: #a5a5a5;
   --fonte-branca: #000000;
   --fonte-preta: #ffffff;

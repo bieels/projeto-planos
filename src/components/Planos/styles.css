@@ -27,7 +27,7 @@
 
 .slider-container {
   width: 100%;
-  height: 50vh;
+  height: 53vh;
 }
 
 .data-card {
@@ -155,14 +155,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .data-card {
-    margin: 5px 150px;
-  }
-}
-
-@media (max-width: 600px) {
-  .data-card {
-    margin: 5px 50px;
-  }
-}
