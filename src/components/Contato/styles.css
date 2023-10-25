@@ -52,14 +52,6 @@
   box-shadow: var(--box-shadow-card);
 }
 
-/* .contato-informacoes {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 300px;
-  background-color: blue;
-} */
-
 .contato-item {
   display: flex;
   align-items: center;
