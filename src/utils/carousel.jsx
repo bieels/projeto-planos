@@ -29,6 +29,7 @@ export const settingsImage = {
   autoPlay: true,
   autoPlaySpeed: 5000,
   pauseOnHover: true,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1480,
