@@ -10,6 +10,7 @@ import Modal from "../../components/Modal";
 import PlanoPopup from "../../components/PlanoPopup";
 
 import { AppProvider } from "../../context/AppContext";
+import Promo from "../../components/Promo";
 
 export default function Home() {
   return (
@@ -17,9 +18,10 @@ export default function Home() {
       <AppProvider>
         <Modal children={<PlanoPopup />}/>
         <Destaques />
-        <Sobre />
         {/* <Diferenciais /> */}
+        <Promo />
         <Planos />
+        <Sobre />
         <Contato />
       </AppProvider>
     </>

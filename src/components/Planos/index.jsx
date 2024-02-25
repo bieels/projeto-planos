@@ -36,7 +36,7 @@ export default function Planos() {
   return (
     <>
       <section id="planos" className="planos">
-      <h2 className="planos-titulo">Nossos Planos</h2>
+      <h2 className="planos-titulo">Os melhores planos de internet fibra</h2>
         <Slider className="slider-container" {...settings}>
           {plans.map((plan) => (
             <div key={plan.id} className="cards">
