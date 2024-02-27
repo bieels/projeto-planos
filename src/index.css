@@ -3,18 +3,16 @@
 :root {
   --preto: #000000;
   --fonte-titulo: #4f4c4c;
-  --verde-dw: #42ab1c;
+  --verde-dw: #159947;
 
   --fonte-branca: #ffffff;
   --fonte-cinza: #667;
   --fonte-preta: #000000;
   --bg-rodape: #000000;
   --bg-chamada-mobile: #265f2b;
-  --bg-card: linear-gradient(145deg, #f0f0f0, #d3d3d3);
+  --bg-card: #f0f0f0;
   --bg-nav: #000000;
   --bg-section: #dfe3e5;
-  --bg-banner: #159947;;
-
   --button-color: #ffffff;
 
   --shadow-section1: rgba(41, 41, 41, 0.247);
@@ -56,6 +54,27 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background: var(--bg-section);
+}
+h2 {
+  color: var(--fonte-branca);
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  color: var(--fonte-branca);
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-family: var(--montserrat);
+}
+
+p {
+  font-size: 20px;
+  color: var(--fonte-branca);
 }
 
 a {

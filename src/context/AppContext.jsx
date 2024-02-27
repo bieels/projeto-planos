@@ -7,6 +7,7 @@ export const AppProvider = ({ children }) => {
   const [selectedPlan, setSelectedPlan] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [scroll, setScroll] = useState(0);
+  const [isMobile, setIsMobile] = useState();
 
   useEffect(() => {
     if (scroll < 200) {
@@ -17,6 +18,23 @@ export const AppProvider = ({ children }) => {
   }, [scroll]);
 
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1366) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
   return (
     <AppContext.Provider
       value={{
@@ -25,7 +43,8 @@ export const AppProvider = ({ children }) => {
         selectedPlan,
         setSelectedPlan,
         scroll,
-        setScroll
+        setScroll,
+        isMobile
       }}
     >
       {children}

@@ -1,37 +1,41 @@
 import DarkMode from "../DarkMode";
-
 import "./styles.css";
 import { useState, useContext, useEffect } from "react";
 import { AppContext } from "../../context/AppContext";
-import { Link , useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function NavBar() {
   const { scroll } = useContext(AppContext);
   const location = useLocation();
-
   const isAdminPage = location.pathname === "/admin";
+  const [isNavVisible, setIsNavVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsNavVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsNavVisible(false);
+  };
 
   return (
     <>
-      <header>
-        <nav
-          style={{
-            background: scroll > 100 ? "var(--bg-nav)" : "transparent",
-            boxShadow:
-              scroll > 100 ? "rgba(0, 0, 0, 0.50) 0px 7px 20px" : "none",
-          }}
-        >
-         
+      <header
+        className={scroll > 100 ? "hidden" : "visible"}
+        
+      >
+        <nav>
           <ul className="nav-list">
-            {NAVBAR_LINK.map((item, key) => (
-             (!isAdminPage && (
-              <li key={key}>
-                  <a href={`/${item.path}`}>{item.name}</a>
-                </li>
-             )  )
-            ))}
+            {NAVBAR_LINK.map(
+              (item, key) =>
+                !isAdminPage && (
+                  <li key={key}>
+                    <a href={`/${item.path}`}>{item.name}</a>
+                  </li>
+                )
+            )}
           </ul>
-          {/* <div className="btn-end">
+          <div className="btn-end">
             <Link to="/admin" className="btn">
               <span className="btn-circle">
                 <svg
@@ -60,7 +64,7 @@ export default function NavBar() {
               </span>
             </Link>
             <DarkMode />
-          </div> */}
+          </div>
         </nav>
       </header>
     </>

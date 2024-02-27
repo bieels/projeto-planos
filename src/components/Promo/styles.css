@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   background: var(--bg-section);
+  overflow: hidden;
 }
 
 .promo-content {
@@ -11,7 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: 200px;
-    background: var(--bg-banner);
+    background: var(--verde-dw);
   width: 170vh;
   height: 30vw;
   border-radius: 10px;

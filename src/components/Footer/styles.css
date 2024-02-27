@@ -57,6 +57,11 @@
 .rodape-link {
     font-size: 20px;
 }
+@media screen and (max-width: 1366px) {
+    .rodape {
+        padding-bottom: 60px;
+    }
+}
 
 
 @media (max-width: 800px) {

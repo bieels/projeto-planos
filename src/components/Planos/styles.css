@@ -1,18 +1,15 @@
-/* ----- PLANOS ----- */
 
 .planos {
   background: var(--bg-section);
-
   box-sizing: border-box;
-
+  padding: 3rem 0 10rem 0;
   display: flex;
-  min-height: 100vh;
+  min-height: 50vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
-  /* box-shadow: 0px 1px 50px 10px var(--shadow-section1); */
   transition: transform 0.45s ease, background 0.45s ease;
 }
 .planos-titulo {
@@ -35,9 +32,9 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  /* width: 15.75em; */
   min-width: 13.75em;
   min-height: 20.75em;
+  max-height: 23.75em;
   overflow: hidden;
   border-radius: 0.5em;
   text-decoration: none;
@@ -71,6 +68,7 @@
 }
 
 .data-card p {
+  font-size: 15px;
   opacity: 0;
   color: var(--fonte-preta);
   font-weight: 600;
@@ -145,6 +143,19 @@
   padding-top: 20px;
 }
 
+@media screen and (max-width: 480px) {
+.planos {
+  height: 100%;
+}
+.planos-titulo {
+  padding: 0;
+}
+.slider-container {
+  width: 100%;
+  height: 100%;
+}
+}
+
 @keyframes point {
   0% {
     transform: translateX(0);
@@ -154,4 +165,3 @@
     transform: translateX(0.2em);
   }
 }
-

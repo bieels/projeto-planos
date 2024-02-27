@@ -7,12 +7,16 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import CrudPage from "./pages/Admin";
 import Inicio from "./components/Inicio";
+import BottomBar from "./components/BottomBar";
+import BotaoTopo from "./components/BotaoTopo";
 
 function App() {
   return (
     <>
       <AppProvider>
         <BrowserRouter>
+        <BottomBar />
+        <BotaoTopo />
           <NavBar />
           <Inicio />
           <Routes>

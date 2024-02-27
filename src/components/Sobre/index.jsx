@@ -23,7 +23,8 @@ export default function Sobre() {
   return (
     <>
       <section id="empresa" className="sobre">
-        <div key={about.id} className="sobre-conteudo">
+        <div className="sobre-container">
+        <div key={about.id} className="sobre-content">
           <article>
             <h2 className="sobre-titulo">Somos o Provedor mais rápido de Simões Filho!</h2>
             <p className="sobre-texto">
@@ -56,6 +57,7 @@ export default function Sobre() {
             alt="Sobre a DW Solutions"
             className="sobre-imagem"
           />
+        </div>
         </div>
       </section>
     </>

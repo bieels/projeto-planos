@@ -1,9 +1,8 @@
 /* ----- SOBRE ----- */
 
 .sobre {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background: var(--bg-banner);
+ height: 50vw;
+  background: var(--verde-dw);
 
   display: flex;
   flex-direction: column;
@@ -15,8 +14,7 @@
   overflow: hidden;
 }
 
-.sobre-conteudo {
-  
+.sobre-content {
   padding: 2rem 10rem;
   border-radius: 20px;
   display: flex;
@@ -25,19 +23,12 @@
   gap: 100px;
 }
 
-.sobre-conteudo article {
+.sobre-content article {
   width: 700px;
 }
 
 .sobre-titulo {
-  color: white;
-  font-weight: 700;
-  font-size: 2.5rem;
-  font-family: var(--montserrat);
-  text-transform: uppercase;
-  text-align: start;
-  /* margin-left: -200px; */
-  margin-bottom: 1.25rem;
+
 }
 
 .sobre-texto {
@@ -53,21 +44,6 @@
   margin-bottom: 80px;
 }
 
-.sec-titulo {
-  color: white;
-  text-align: start;
-  margin-bottom: 15px;
-  font-size: 22px;
-}
-
-.texto-sec {
-  font-size: 20px;
-  text-align: start;
-}
-.sobre-conteudo p {
-  color: white;
-}
-
 .sobre-imagem {
   width: 100vw;
   max-width: 400px;
@@ -80,11 +56,16 @@
 }
 
 @media screen and (max-width: 1366px) {
-  .sobre-conteudo {
+.sobre {
+  height: 100%;
+}
+
+  .sobre-content {
     flex-direction: column;
+    padding: 5rem 3rem;
   }
   .sobre-imagem {
-    margin: 0;
+    display: none;
   }
   .sobre-titulo,
   .sobre-texto,
@@ -95,7 +76,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .sobre-conteudo article {
+  .sobre-content article {
     width: 100%;
   }
 

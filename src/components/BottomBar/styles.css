@@ -1,0 +1,44 @@
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    z-index: 999;
+  }
+  
+  .bottom-bar-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .option-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .option-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .option-label {
+    color: white;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    .bottom-bar {
+        display: none;
+    }
+  }
+  
