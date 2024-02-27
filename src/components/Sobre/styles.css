@@ -3,12 +3,7 @@
 .sobre {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background: rgb(38, 95, 43);
-  background: linear-gradient(
-    102deg,
-    rgb(29, 73, 33) 10%,
-    rgb(19, 49, 21) 80%
-  );
+  background: var(--bg-banner);
 
   display: flex;
   flex-direction: column;

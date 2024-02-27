@@ -2,11 +2,12 @@ header {
   position: fixed;
   z-index: 999;
   user-select: none;
+  transition: all 300ms ease-in-out;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   /* background: var(--bg-nav); */
   width: 100vw;
@@ -26,15 +27,6 @@ nav a:hover {
   color: var(--verde-dw);
 }
 
-.logo img {
-  width: 220px;
-  margin-top: 5px;
-  transition: all 300ms ease;
-}
-
-.logo img:hover {
-  opacity: 60%;
-}
 
 .btn-end {
   width: 200px;

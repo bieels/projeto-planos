@@ -1,7 +1,7 @@
 /* ----- DESTAQUES ----- */
 
 .destaques {
-  background-color: var(--bg-section-1);
+  background-color: var(--bg-section);
   height: 100vh;
 
   padding-top: 2rem;

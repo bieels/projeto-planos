@@ -1,5 +1,5 @@
 .crud-page {
-  background: var(--bg-section-2);
+  background: var(--bg-section);
 }
 .crud-container {
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: center;
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: var(--bg-section-2);
+  background: var(--bg-section);
 }
 
 .edit {
@@ -94,7 +94,7 @@
   padding: 10px;
   border: 0;
   border-radius: 5px;
-  background: var(--bg-section-2);
+  background: var(--bg-section);
   color: var(--fonte-preta);
 }
 

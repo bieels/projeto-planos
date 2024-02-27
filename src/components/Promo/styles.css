@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--bg-section);
 }
 
 .promo-content {
@@ -10,12 +11,7 @@
     align-items: center;
     justify-content: center;
     gap: 200px;
-    background: rgb(38, 95, 43);
-    background: linear-gradient(
-      102deg,
-      rgb(29, 73, 33) 10%,
-      rgb(19, 49, 21) 80%
-    );
+    background: var(--bg-banner);
   width: 170vh;
   height: 30vw;
   border-radius: 10px;

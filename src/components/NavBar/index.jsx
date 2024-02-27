@@ -1,5 +1,5 @@
 import DarkMode from "../DarkMode";
-import dwlogo from "/img/dwlogo3.png";
+
 import "./styles.css";
 import { useState, useContext, useEffect } from "react";
 import { AppContext } from "../../context/AppContext";
@@ -21,9 +21,7 @@ export default function NavBar() {
               scroll > 100 ? "rgba(0, 0, 0, 0.50) 0px 7px 20px" : "none",
           }}
         >
-          <a className="logo" href="/">
-            <img src={dwlogo} alt="" />
-          </a>
+         
           <ul className="nav-list">
             {NAVBAR_LINK.map((item, key) => (
              (!isAdminPage && (
@@ -33,7 +31,7 @@ export default function NavBar() {
              )  )
             ))}
           </ul>
-          <div className="btn-end">
+          {/* <div className="btn-end">
             <Link to="/admin" className="btn">
               <span className="btn-circle">
                 <svg
@@ -62,7 +60,7 @@ export default function NavBar() {
               </span>
             </Link>
             <DarkMode />
-          </div>
+          </div> */}
         </nav>
       </header>
     </>
@@ -81,13 +79,13 @@ const NAVBAR_LINK = [
     page: false,
   },
   {
-    name: "Empresa",
-    path: "#empresa",
+    name: "Planos",
+    path: "#planos",
     page: false,
   },
   {
-    name: "Planos",
-    path: "#planos",
+    name: "Empresa",
+    path: "#empresa",
     page: false,
   },
   {

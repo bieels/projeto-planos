@@ -5,11 +5,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useForm } from "react-hook-form";
 import "./styles.css";
 
 export default function CrudPage() {
+  const { register, handleSubmit, reset } = useForm();
+
   const [items, setItems] = useState([]);
   const [idToEdit, setIdToEdit] = useState("");
+  const [showEditModal, setShowEditModal] = useState(false);
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [desc1, setDesc1] = useState("");
@@ -19,7 +23,6 @@ export default function CrudPage() {
   const [appBasico, setAppBasico] = useState(false);
   const [desc5, setDesc5] = useState("");
   const [appPremium, setAppPremium] = useState(false);
-  const [showEditModal, setShowEditModal] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
@@ -36,27 +39,18 @@ export default function CrudPage() {
     fetchData();
   }, []);
 
-  const handleCreate = async () => {
+  const onSubmit = async (data) => {
     try {
-      const newItem = {
-        title,
-        price,
-        desc1,
-        desc2,
-        desc3,
-        desc4,
-        appbasico: appBasico,
-        desc5,
-        apppremium: appPremium,
-      };
+      const newItem = { ...data };
       const response = await axios.post(
         "https://json-server-dw.vercel.app/plans",
         newItem
       );
       newItem.id = response.data.id;
       setItems([...items, newItem]);
-      clearForm();
+      reset();
     } catch (error) {
+      console.error("Error creating item: ", error);
     }
   };
 
@@ -68,9 +62,9 @@ export default function CrudPage() {
     setDesc2(item.desc2);
     setDesc3(item.desc3);
     setDesc4(item.desc4);
-    setAppBasico(item.appbasico);
+    setAppBasico(item.appBasico);
     setDesc5(item.desc5);
-    setAppPremium(item.apppremium);
+    setAppPremium(item.appPremium);
     setShowEditModal(true);
   };
 
@@ -83,9 +77,9 @@ export default function CrudPage() {
         desc2,
         desc3,
         desc4,
-        appbasico: appBasico,
+        appBasico,
         desc5,
-        apppremium: appPremium,
+        appPremium,
       };
       await axios.put(
         `https://json-server-dw.vercel.app/plans/${idToEdit}`,
@@ -138,17 +132,13 @@ export default function CrudPage() {
                 <h3>{item.title}</h3>
                 <h4>{item.price}</h4>
                 <div className="plan-desc">
-                  {" "}
                   <p>{item.desc1}</p> <br />
                   <p>{item.desc2}</p> <br />
                   <p>{item.desc3}</p> <br />
                   <p>{item.desc4}</p> <br />
                   <p>{item.desc5}</p>
                 </div>
-                <Link
-                  className="link-text"
-                  onClick={() => handleEdit(item)}
-                >
+                <Link className="link-text" onClick={() => handleEdit(item)}>
                   Editar
                   <svg
                     width="25"
@@ -171,7 +161,6 @@ export default function CrudPage() {
         </Slider>
       </main>
       <div className="crud-container">
-
         {showEditModal && (
           <div className="edit-modal">
             <div className="edit-modal-content">
@@ -264,111 +253,93 @@ export default function CrudPage() {
                   onChange={(e) => setAppPremium(e.target.checked)}
                 />
               </div>
-             <div className="buttons">
-             <button onClick={handleSaveEdit}>Salvar</button>
-              <button onClick={handleDelete}>Excluir</button>
-              <button onClick={() => setShowEditModal(false)}>Fechar</button>
-             </div>
+              <div className="buttons">
+                <button onClick={handleSaveEdit}>Salvar</button>
+                <button onClick={handleDelete}>Excluir</button>
+                <button onClick={() => setShowEditModal(false)}>Fechar</button>
+              </div>
             </div>
           </div>
         )}
-
         <div className="form-container">
-          <h2>Criar Plano</h2>
-          <div className="input-container">
-            <label htmlFor="title">Título:</label>
-            <input
-              type="text"
-              id="title"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-            />
-            <span className="bar"></span>
-          </div>
-          <div className="input-container">
-            <label htmlFor="price">Preço:</label>
-            <input
-              type="text"
-              id="price"
-              value={price}
-              onChange={(e) => setPrice(e.target.value)}
-            />
-            <span className="bar"></span>
-          </div>
-          <div className="input-container">
-            <label htmlFor="desc1">Descrição 1:</label>
-            <input
-              type="text"
-              id="desc1"
-              value={desc1}
-              onChange={(e) => setDesc1(e.target.value)}
-            />
-            <span className="bar"></span>
-          </div>
-          <div className="input-container">
-            <label htmlFor="desc2">Descrição 2:</label>
-            <input
-              type="text"
-              id="desc2"
-              value={desc2}
-              onChange={(e) => setDesc2(e.target.value)}
-            />
-            <span className="bar"></span>
-          </div>
-          <div className="input-container">
-            <label htmlFor="desc3">Descrição 3:</label>
-            <input
-              type="text"
-              id="desc3"
-              value={desc3}
-              onChange={(e) => setDesc3(e.target.value)}
-            />
-            <span className="bar"></span>
-          </div>
-          <div className="input-container">
-            <label htmlFor="desc4">Descrição 4:</label>
-            <input
-              type="text"
-              id="desc4"
-              value={desc4}
-              onChange={(e) => setDesc4(e.target.value)}
-            />
-            <span className="bar"></span>
-          </div>
-          <div className="input-container">
-            <label htmlFor="appBasico">App Básico:</label>
-            <input
-              type="checkbox"
-              id="appBasico"
-              checked={appBasico}
-              onChange={(e) => setAppBasico(e.target.checked)}
-            />
-            <span className="bar"></span>
-          </div>
-          <div className="input-container">
-            <label htmlFor="desc5">Descrição 5:</label>
-            <input
-              type="text"
-              id="desc5"
-              value={desc5}
-              onChange={(e) => setDesc5(e.target.value)}
-            />
-            <span className="bar"></span>
-          </div>
-          <div className="input-container">
-            <label htmlFor="appPremium">App Premium:</label>
-            <input
-              type="checkbox"
-              id="appPremium"
-              checked={appPremium}
-              onChange={(e) => setAppPremium(e.target.checked)}
-            />
-            <span className="bar"></span>
-          </div>
-          <button onClick={handleCreate}>Criar</button>
+          <form className="form" onSubmit={handleSubmit(onSubmit)}>
+            <h2>Criar Plano</h2>
+            <div className="input-container">
+              <label htmlFor="title">Título:</label>
+              <input
+                type="text"
+                id="title"
+                {...register("title", { required: true })}
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="price">Preço:</label>
+              <input
+                type="text"
+                id="price"
+                {...register("price", { required: true })}
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="desc1">Descrição 1:</label>
+              <input
+                type="text"
+                id="desc1"
+                {...register("desc1", { required: true })}
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="desc2">Descrição 2:</label>
+              <input
+                type="text"
+                id="desc2"
+                {...register("desc2", { required: true })}
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="desc3">Descrição 3:</label>
+              <input
+                type="text"
+                id="desc3"
+                {...register("desc3", { required: true })}
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="desc4">Descrição 4:</label>
+              <input
+                type="text"
+                id="desc4"
+                {...register("desc4", { required: true })}
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="appBasico">App Básico:</label>
+              <input
+                type="checkbox"
+                id="appBasico"
+                {...register("appBasico")}
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="desc5">Descrição 5:</label>
+              <input
+                type="text"
+                id="desc5"
+                {...register("desc5", { required: true })}
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="appPremium">App Premium:</label>
+              <input
+                type="checkbox"
+                id="appPremium"
+                {...register("appPremium")}
+              />
+            </div>
+            <button type="submit">Criar</button>
+          </form>
         </div>
       </div>
     </section>
   );
 }
-

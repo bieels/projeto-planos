@@ -12,8 +12,8 @@
   --bg-chamada-mobile: #265f2b;
   --bg-card: linear-gradient(145deg, #f0f0f0, #d3d3d3);
   --bg-nav: #000000;
-  --bg-section-1: #dfe3e5;
-  --bg-section-2: #fff;
+  --bg-section: #dfe3e5;
+  --bg-banner: #159947;;
 
   --button-color: #ffffff;
 
@@ -28,10 +28,9 @@
 }
 
 [data-theme="dark"] {
-  --bg-section-2: #000000;
-  --bg-section-1: #131313;
-  --bg-card: #202020;
-  --bg-rodape: #131313;
+  --bg-section: #061a23;
+  --bg-card: #1a1a1a;
+  --bg-rodape: #000000;
   --button-color: #3d3d3d;
   --fonte-titulo: #a5a5a5;
   --fonte-branca: #000000;

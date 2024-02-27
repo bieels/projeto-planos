@@ -1,4 +1,5 @@
 import './styles.css';
+import dwlogo from "/img/dwlogo3.png";
 import { useLocation } from 'react-router-dom';
 
 export default function Inicio () {
@@ -12,8 +13,11 @@ export default function Inicio () {
     return (
         <>
             <section id="home" className="chamada">
-                <img className="background-chamada" src="img/personBackground.png" alt="Background DW Solutions" />
+                {/* <img className="background-chamada" src="img/personBackground.png" alt="Background DW Solutions" /> */}
             {!isAdminPage ? (<div className="chamada-content">
+            <a className="logo" href="/">
+            <img src={dwlogo} alt="" />
+          </a>
             <h1 className="chamada-titulo">Seja Bem Vindo a <br/> DW Solutions!</h1>
             <p className="chamada-texto">A melhor Banda Larga da cidade!</p>
             <a href="#planos" className="chamada-botao botao">Conheça os planos</a>

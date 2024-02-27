@@ -1,7 +1,7 @@
 /* ----- PLANOS ----- */
 
 .planos {
-  background: var(--bg-section-1);
+  background: var(--bg-section);
 
   box-sizing: border-box;
 
@@ -55,7 +55,7 @@
   line-height: 1;
   padding-bottom: 0.5em;
   margin: 0 0 0.142857143em;
-  border-bottom: 2px solid var(--verde-dw);
+  border-bottom: 2px solid var(--fonte-preta);
   transition: color 0.45s ease, border 0.45s ease;
 }
 
