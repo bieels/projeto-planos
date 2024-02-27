@@ -5,7 +5,7 @@
     padding: 10px 20px;
     background-color: var(--bg-card);
     box-shadow: var(--box-shadow-card);
-    color: black;
+    color: var(--fonte-preta);
     border: none;
     border-radius: 5px;
     cursor: pointer;

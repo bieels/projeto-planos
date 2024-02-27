@@ -3,7 +3,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: var(--bg-card);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -26,9 +26,11 @@
     align-items: center;
   }
   
-  .option-icon {
-    width: 24px;
-    height: 24px;
+  .bottom-bar .icon {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 5px;
+    color: white;
   }
   
   .option-label {

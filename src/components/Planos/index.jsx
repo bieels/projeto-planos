@@ -35,7 +35,7 @@ export default function Planos() {
 
   return (
     <>
-      <section id="planos" className="planos">
+      <section id="plans" className="planos">
       <h2 className="planos-titulo">Os melhores planos de internet fibra</h2>
         <Slider className="slider-container" {...settings}>
           {plans.map((plan) => (

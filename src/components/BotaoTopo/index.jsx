@@ -3,7 +3,6 @@ import { AppContext } from "../../context/AppContext";
 import "./styles.css"; 
 
 export default function BotaoTopo() {
-  const [isVisible, setIsVisible] = useState(false);
   const { scroll } = useContext(AppContext);
 
   const scrollToTop = () => {

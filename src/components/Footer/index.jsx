@@ -11,7 +11,7 @@ export default function Footer () {
             <li className="rodape-link"><a href="/#home">Início</a></li>
             <li className="rodape-link"><a href="/#destaques">Destaques</a></li>
             <li className="rodape-link"><a href="/#empresa">Empresa</a></li>
-            <li className="rodape-link"><a href="/#planos">Planos</a></li>
+            <li className="rodape-link"><a href="/#plans">Planos</a></li>
             <li className="rodape-link"><a href="/#contato">Contato</a></li>
         </ul>
         <p className="copy">Copyright DW Solutions 2014. Todos os direitos reservados.</p>
