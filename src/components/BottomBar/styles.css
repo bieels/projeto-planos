@@ -11,6 +11,7 @@
 .bottom-bar-container {
   display: flex;
   justify-content: space-around;
+  z-index: 999;
 }
 
 .bottom-bar-option {
