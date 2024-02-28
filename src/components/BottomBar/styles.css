@@ -7,11 +7,11 @@
   transition: all 300ms ease-in-out;
   align-items: center;
   height: 60px;
+  z-index: 999;
 }
 .bottom-bar-container {
   display: flex;
   justify-content: space-around;
-  z-index: 999;
 }
 
 .bottom-bar-option {
@@ -45,7 +45,7 @@
 .bottom-bar-container a {
   background-color: var(--bg-card);
   z-index: 999;
-  padding: 0 22px 15px 22px;
+  padding: 5px 22px 10px 22px;
 }
 
 
