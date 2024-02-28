@@ -28,7 +28,7 @@ export default function BottomBar() {
         </a>
       </div>
       <div className="bottom-bar-option">
-        <a className="option-button" href="">
+        <a className="option-button client-button" href="">
           <Person2RoundedIcon className="icon" />
           <span className="option-label">Cliente</span>
         </a>
