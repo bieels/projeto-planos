@@ -1,6 +1,6 @@
 .rodape {
     background-color: var(--bg-rodape);
-    box-shadow: 0px 1px 80px 10px var(--shadow-section1);
+    box-shadow: 0px 1px 80px 10px var(--bg-section);
     user-select: none;
 }
 

@@ -8,6 +8,36 @@ export const AppProvider = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
   const [scroll, setScroll] = useState(0);
   const [isMobile, setIsMobile] = useState();
+  const [isActive, setIsActive] = useState(false);
+  const selectedTheme = localStorage.getItem("selectedTheme");
+
+  const setDarkMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "dark");
+    localStorage.setItem("selectedTheme", "dark");
+    setIsActive(true);
+  };
+
+  const setLightMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "light");
+    localStorage.setItem("selectedTheme", "light");
+    setIsActive(false);
+  };
+
+  const toggleTheme = () => {
+    if (isActive) {
+      setLightMode();
+    } else {
+      setDarkMode();
+    }
+  };
+
+  useEffect(() => {
+    if (selectedTheme === "dark") {
+      setDarkMode();
+    } else {
+      setLightMode();
+    }
+  }, [selectedTheme]);
 
   useEffect(() => {
     if (scroll < 200) {
@@ -44,7 +74,10 @@ export const AppProvider = ({ children }) => {
         setSelectedPlan,
         scroll,
         setScroll,
-        isMobile
+        isMobile,
+        isActive,
+        setIsActive,
+        toggleTheme
       }}
     >
       {children}

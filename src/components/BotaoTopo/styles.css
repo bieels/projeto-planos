@@ -2,15 +2,19 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: var(--bg-card);
     box-shadow: var(--box-shadow-card);
     color: var(--fonte-preta);
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     z-index: 999;
     transition: all 300ms ease-in-out;
+  }
+
+  .back-to-top-button:hover {
+    scale: .8;
   }
 
   

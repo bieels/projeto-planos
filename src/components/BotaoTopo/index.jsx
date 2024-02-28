@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { AppContext } from "../../context/AppContext";
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import "./styles.css"; 
 
 export default function BotaoTopo() {
@@ -17,7 +18,7 @@ export default function BotaoTopo() {
     <>
       { scroll > 100 && (
         <button className="back-to-top-button" onClick={scrollToTop}>
-          Voltar ao Topo
+          <ExpandLessIcon />
         </button>
       )}
     </>
