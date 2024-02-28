@@ -14,7 +14,6 @@ export default function BottomBar() {
 
   return (
     <div className="bottom-bar">
-      <div className="bottom-bar-container">
       <div className="bottom-bar-option">
         <a className="option-button" href="#home">
           <HomeRoundedIcon className="icon" />
@@ -48,22 +47,19 @@ export default function BottomBar() {
             <MenuIcon className="icon" />
             <span className="option-label">Opções</span>
           </a>
-          
-          
-      </div>
+        </div>
+        <div className={showDropdown ? "dropdown-hidden" : "dropdown-content"}>
+          <button className="dropdown-btn" onClick={toggleTheme}>
+            {isActive ? (
+              <Sun sx={{ color: "#ffffff" }} className="icon" />
+            ) : (
+              <Moon sx={{ color: "#3b3b3b" }} className="icon" />
+            )}
+            Tema
+          </button>
+          {/* <button className="dropdown-btn">Opção 2</button> */}
         </div>
       </div>
-            <div className={showDropdown ? "dropdown-hidden" : "dropdown-content"}>
-              <button className="dropdown-btn" onClick={toggleTheme}>
-                {isActive ? (
-                  <Sun sx={{ color: "#ffffff" }} className="icon" />
-                ) : (
-                  <Moon sx={{ color: "#3b3b3b" }} className="icon" />
-                )}
-                Tema
-              </button>
-              {/* <button className="dropdown-btn">Opção 2</button> */}
-            </div>
     </div>
   );
 }
