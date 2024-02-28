@@ -8,8 +8,8 @@
   background-color: var(--bg-card);
   transition: all 300ms ease-in-out;
   align-items: center;
-  height: 60px;
-  z-index: 998;
+  height: 50px;
+  z-index: 999;
 }
 
 .bottom-bar-option {
@@ -38,7 +38,7 @@
 .bottom-bar .icon {
   width: 30px;
   height: 30px;
-  padding-bottom: 5px;
+  padding-bottom: 0;
   color: var(--fonte-preta);
 }
 
@@ -56,7 +56,7 @@
   bottom: 50px;
   right: -20px;
   transition: all 300ms ease-in-out;
-  z-index: 1;
+  z-index: 998;
 }
 
 .dropdown-btn {
@@ -64,10 +64,14 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-  padding: 15px 25px;
+  padding: 15px 15px;
   border: none;
   border-radius: 10px;
   color: var(--fonte-preta);
+}
+
+.option-button span {
+  display: none;
 }
 
 

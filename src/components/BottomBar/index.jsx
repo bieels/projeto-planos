@@ -55,7 +55,7 @@ export default function BottomBar() {
             ) : (
               <Moon sx={{ color: "#3b3b3b" }} className="icon" />
             )}
-            Tema
+            
           </button>
           {/* <button className="dropdown-btn">Opção 2</button> */}
         </div>

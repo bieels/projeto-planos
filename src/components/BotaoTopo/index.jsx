@@ -20,7 +20,7 @@ export default function BotaoTopo() {
   return (
     <>
       
-          <div>
+          <div className="floating-btn">
             <button className={scroll > 100 ? "dark-mode-button" : "dark-mode-button hiddenbtn"} onClick={toggleTheme}>
         {isActive ? (
           <Sun sx={{ color: "#ffffff" }} className="icon" />
@@ -29,7 +29,7 @@ export default function BotaoTopo() {
         )}
       </button>
         <button className={scroll > 100 ?  "back-to-top-button" : "back-to-top-button hiddenbtn"} onClick={scrollToTop}>
-          <ExpandLessIcon />
+          <ExpandLessIcon  className="icon"/>
         </button> 
         </div>
       
