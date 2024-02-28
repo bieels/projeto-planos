@@ -1,4 +1,3 @@
-import DarkMode from '../DarkMode';
 import './styles.css';
 
 export default function Footer () {

@@ -1,11 +1,11 @@
-.back-to-top-button {
+.back-to-top-button, .dark-mode-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 10px;
     background-color: var(--bg-card);
     box-shadow: var(--box-shadow-card);
-    color: var(--fonte-preta);
+    color: var(--fonte-preta) ;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -13,13 +13,21 @@
     transition: all 300ms ease-in-out;
   }
 
-  .back-to-top-button:hover {
+  .hiddenbtn {
+    bottom: -50px !important;
+  }
+
+  .back-to-top-button:hover, .dark-mode-button:hover {
     scale: .8;
+  }
+
+  .dark-mode-button {
+    bottom: 80px;
   }
 
   
   @media screen and (max-width: 1366px) {
-    .back-to-top-button {
+    .back-to-top-button, .dark-mode-button {
         display: none;
     }
   }

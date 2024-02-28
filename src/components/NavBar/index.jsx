@@ -1,4 +1,3 @@
-import DarkMode from "../DarkMode";
 import "./styles.css";
 import { useState, useContext, useEffect } from "react";
 import { AppContext } from "../../context/AppContext";
@@ -37,7 +36,7 @@ export default function NavBar() {
                 )
             )}
           </ul>
-          <div className="btn-end">
+          {/* <div className="btn-end">
             <Link to="/admin" className="btn">
               <span className="btn-circle">
               <Person2Rounded />
@@ -46,15 +45,14 @@ export default function NavBar() {
               <KeyboardArrowRightRounded />
               </span>
             </Link>
-            <DarkMode />
-          </div>
+          </div> */}
         </nav>
       </header>
     </>
   );
 }
 
-const NAVBAR_LINK = [
+export const NAVBAR_LINK = [
   {
     name: "Início",
     path: "#home",
@@ -67,7 +65,7 @@ const NAVBAR_LINK = [
   },
   {
     name: "Planos",
-    path: "#planos",
+    path: "#plans",
     page: false,
   },
   {

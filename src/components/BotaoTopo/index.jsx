@@ -1,9 +1,12 @@
 import React, { useState, useContext } from "react";
 import { AppContext } from "../../context/AppContext";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import Sun from "@mui/icons-material/LightMode";
+import Moon from "@mui/icons-material/Brightness3";
 import "./styles.css"; 
 
 export default function BotaoTopo() {
+  const { toggleTheme, isActive } = useContext(AppContext);
   const { scroll } = useContext(AppContext);
 
   const scrollToTop = () => {
@@ -16,11 +19,20 @@ export default function BotaoTopo() {
 
   return (
     <>
-      { scroll > 100 && (
-        <button className="back-to-top-button" onClick={scrollToTop}>
+      
+          <div>
+            <button className={scroll > 100 ? "dark-mode-button" : "dark-mode-button hiddenbtn"} onClick={toggleTheme}>
+        {isActive ? (
+          <Sun sx={{ color: "#ffffff" }} className="icon" />
+        ) : (
+          <Moon sx={{ color: "#3b3b3b" }} className="icon" />
+        )}
+      </button>
+        <button className={scroll > 100 ?  "back-to-top-button" : "back-to-top-button hiddenbtn"} onClick={scrollToTop}>
           <ExpandLessIcon />
-        </button>
-      )}
+        </button> 
+        </div>
+      
     </>
   );
 }

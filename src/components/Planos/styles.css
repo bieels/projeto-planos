@@ -2,7 +2,7 @@
 .planos {
   background: var(--bg-section);
   box-sizing: border-box;
-  padding: 3rem 0 10rem 0;
+  padding: 5rem 0 10rem 0;
   display: flex;
   min-height: 50vh;
   align-items: center;
