@@ -20,7 +20,7 @@ export default function Inicio () {
           </a>
             <h1 className="chamada-titulo">Seja Bem Vindo a <br/> DW Solutions!</h1>
             <p className="chamada-texto">A melhor Banda Larga da cidade!</p>
-            <a href="#planos" className="chamada-botao botao">Conheça os planos</a>
+            <a href="#plans" className="chamada-botao botao">Conheça os planos</a>
             </div>) : (<div className="chamada-content">
             <h1 className="chamada-titulo">Seja Bem Vindo a <br/> DW Solutions!</h1>
             <p className="chamada-texto">Área administrativa do site.</p>

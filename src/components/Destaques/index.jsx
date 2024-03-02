@@ -27,7 +27,7 @@ useEffect(() => {
       <section id="destaques" className="destaques">
           <Slider {...settingsImage} className="slider-image-container">
           {highlights.map((destaque) => (
-              <a key={destaque.id} href="#planos" className="destaques-link">
+              <a key={destaque.id} href="#plans" className="destaques-link">
                 <img
                   src={destaque.img}
                   alt=""

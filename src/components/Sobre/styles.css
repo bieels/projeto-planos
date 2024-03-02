@@ -28,14 +28,24 @@
 }
 
 .sobre-titulo {
+  color: white;
 
 }
 
 .sobre-texto {
+  color: white;
   font-size: 25px;
   text-align: start;
   padding: 10px;
   margin-bottom: 70px;
+}
+
+.sec-titulo {
+  color: white;
+
+}
+.texto-sec {
+  color: white;
 }
 
 .sobre-texto-sec {
@@ -48,15 +58,15 @@
   width: 100vw;
   max-width: 400px;
   border-radius: 10px;
-
+  
   box-shadow: var(--box-shadow-card);
-
+  
   margin-bottom: 0.5rem;
   margin-left: 200px;
 }
 
 @media screen and (max-width: 1366px) {
-.sobre {
+  .sobre {
   height: 100%;
 }
 
