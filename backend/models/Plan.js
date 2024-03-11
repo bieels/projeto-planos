@@ -8,7 +8,7 @@ const planSchema = new Schema({
     desc2: String,
     desc3: String,
     appBasico: Boolean,
-    appPremiun: Boolean,
+    appPremium: Boolean,
 },
 {
     timestamps: true

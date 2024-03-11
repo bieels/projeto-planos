@@ -48,7 +48,7 @@ export default function BottomBar() {
             <span className="option-label">Opções</span>
           </a>
         </div>
-        <div className={showDropdown ? "dropdown-hidden" : "dropdown-content"}>
+        <div className={showDropdown ?  "dropdown-content" : "dropdown-hidden"}>
           <button className="dropdown-btn" onClick={toggleTheme}>
             {isActive ? (
               <Sun sx={{ color: "#ffffff" }} className="icon" />

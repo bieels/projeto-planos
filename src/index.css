@@ -11,7 +11,7 @@
   --bg-rodape: #000000;
   --bg-chamada-mobile: #265f2b;
   --bg-card: #f0f0f0;
-  --bg-nav: #030D06;
+  --bg-nav: #ffffff;
   --bg-section: #dfe3e5;
   --button-color: #ffffff;
 
@@ -28,6 +28,7 @@
 [data-theme="dark"] {
   --verde-dw: #0E4029;
   --bg-section: #030D06;
+  --bg-nav: #000000;
   --bg-card: #1a1a1a;
   --bg-rodape: #000000;
   --button-color: #3d3d3d;
@@ -54,7 +55,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "montserrat", sans-serif;
   background: var(--bg-section);
 }
 h2 {
@@ -84,24 +85,30 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
-  color: var(--verde-dw);
+
+.button {
+  font-family: var(--montserrat);
+  color: var(--fonte-branca);
+  cursor: pointer;
+  border: 1px solid var(--bg-section);
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 4px;
+  padding: 1.2em 4em;
+  font-size: 15px;
+  background: transparent;
+  transition: 0.2s;
 }
 
-.botao {
-  text-align: center;
+.button:hover {
+  /* color: var(--fonte-preta); */
+  transform: translate(-0.25rem, -0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--fonte-branca);
+}
 
-  display: block;
-
-  width: 100%;
-  max-width: 300px;
-
-  box-sizing: border-box;
-
-  padding: 1rem 2rem;
-
-  border: 3px solid #ffffff;
-  border-radius: 5px;
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
 }
 
 

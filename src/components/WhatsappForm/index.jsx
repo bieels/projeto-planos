@@ -24,7 +24,7 @@ export default function WhatsAppForm() {
   };
 
   return (
-    <section className="WhatsAppForm">
+    <div className="WhatsAppForm">
       <div className="form-group">
         <h2 className="social-title">Envie uma Mensagem <br />para nós</h2>
         <form onSubmit={handleSubmit}>
@@ -54,13 +54,13 @@ export default function WhatsAppForm() {
             <label>Mensagem</label>
           </div>
 
-          <button type="submit" className="submit-button">
+          <button type="submit" className="button">
             <WhatsAppIcon className="btn-icon"/>
             Enviar Mensagem
           </button>
         </form>
       </div>
-    </section>
+    </div>
   );
 }
 

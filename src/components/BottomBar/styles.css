@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: var(--bg-card);
+  background-color: var(--bg-nav);
   transition: all 300ms ease-in-out;
   align-items: center;
   height: 50px;
@@ -58,7 +58,7 @@
 }
 
 .dropdown-btn {
-  background: var(--bg-card);
+  background: var(--bg-nav);
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -70,6 +70,10 @@
 
 .option-button span {
   display: none;
+}
+
+.option-button:active {
+  transform: translateY(-3px);
 }
 
 

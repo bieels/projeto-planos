@@ -1,6 +1,5 @@
 import { useState, createContext, useEffect } from "react";
 
-
 export const AppContext = createContext({});
 
 export const AppProvider = ({ children }) => {
@@ -10,6 +9,7 @@ export const AppProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState();
   const [isActive, setIsActive] = useState(false);
   const selectedTheme = localStorage.getItem("selectedTheme");
+  const [modalContent, setModalContent] = useState(null);
 
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
@@ -47,7 +47,6 @@ export const AppProvider = ({ children }) => {
     }
   }, [scroll]);
 
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 1366) {
@@ -64,7 +63,6 @@ export const AppProvider = ({ children }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-
   return (
     <AppContext.Provider
       value={{
@@ -77,7 +75,9 @@ export const AppProvider = ({ children }) => {
         isMobile,
         isActive,
         setIsActive,
-        toggleTheme
+        toggleTheme,
+        modalContent,
+        setModalContent,
       }}
     >
       {children}

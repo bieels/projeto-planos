@@ -21,19 +21,19 @@ export default function NavBar() {
 
   return (
     <>
+   { !isAdminPage && (
       <header
-        className={scroll > 100 ? "hidden" : "visible"}
+        className={scroll > 50 ? "hidden" : "visible"}
         
       >
         <nav>
           <ul className="nav-list">
             {NAVBAR_LINK.map(
               (item, key) =>
-                !isAdminPage && (
+                
                   <li key={key}>
                     <a href={`/${item.path}`}>{item.name}</a>
                   </li>
-                )
             )}
           </ul>
           {/* <div className="btn-end">
@@ -48,6 +48,7 @@ export default function NavBar() {
           </div> */}
         </nav>
       </header>
+    )}
     </>
   );
 }
