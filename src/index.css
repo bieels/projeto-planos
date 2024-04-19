@@ -3,7 +3,8 @@
 :root {
   --preto: #000000;
   --fonte-titulo: #4f4c4c;
-  --verde-dw: #045932;
+  /* --verde-dw: #045932; */
+  --verde-dw: #0E4029;
 
   --fonte-branca: #ffffff;
   --fonte-cinza: #667;
@@ -34,7 +35,7 @@
   --button-color: #3d3d3d;
   --fonte-titulo: #a5a5a5;
   --fonte-branca: #000000;
-  --fonte-preta: #ffffff;
+  --fonte-preta: #ebebeb;
   --plano-branco: #1a1a1a;
   --shadow-section1: rgba(39, 39, 39, 0.308);
   --shadow-section2: rgba(0, 0, 0, 0.336);
@@ -87,6 +88,10 @@ a {
 
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   font-family: var(--montserrat);
   color: var(--fonte-branca);
   cursor: pointer;

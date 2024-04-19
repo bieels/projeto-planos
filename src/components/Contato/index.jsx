@@ -10,29 +10,29 @@ export default function Contato() {
     <>
       <section id="contato" className="contato">
         <div className="contato-container">
-          <WhatsAppForm />
+          {/* <WhatsAppForm /> */}
           <div className="contato-content">
             <div className="social-content">
               <h2 className="social-title">Nosso Contato</h2>
               <article className="contato-informacoes">
                 <a className="contato-item" href="tel:+557131992109">
-                 <div className="contato-icon"><LocalPhoneIcon /></div>(71) 3199-2109
+                 <div className="button"><LocalPhoneIcon /></div>(71) 3199-2109
                 </a>
                 <a
                   className="contato-item"
                   href="mailto:contatos@dwsolutions.com.br"
                 >
-                  <div className="contato-icon"><EmailIcon /></div>
+                  <div className="button"><EmailIcon /></div>
                   contato@dwsolutions
                 </a>
               </article>
               <div className="social-media">
               <h2 className="social-title">Nossas redes sociais</h2>
                 <div className="social-items">
-                <a href="">
+                <a className="button" href="">
                   <InstagramIcon />
                 </a>
-                <a href="">
+                <a className="button" href="">
                   <FacebookIcon />
                 </a>
                 </div>

@@ -28,16 +28,16 @@
   color: var(--fonte-titulo);
 }
 
-.contato-icon {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
+.contato .button {
+  color: var(--fonte-titulo);
+  padding: 10px;
+  margin: 10px;
   border-radius: 50%;
-  box-shadow: var(--box-shadow-contact);
-  background-color: var(--button-color);
-  border-radius: 100%;
-  margin-right: 15px;
+  border: 1px solid var(--fonte-titulo);
+}
+
+.contato .button:hover {
+  box-shadow: 0.25rem 0.25rem var(--fonte-titulo);
 }
 
 .contato-item:hover .contato-icon {
@@ -93,20 +93,6 @@
 .social-items {
   display: flex;
   gap: 25px;
-}
-
-.social-items a {
-  display: grid;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  box-shadow: var(--box-shadow-contact);
-  background-color: var(--button-color);
-  border-radius: 100%;
-}
-
-.social-items a:hover {
-  box-shadow: 0 0 1px 2px var(--verde-dw);
 }
 
 

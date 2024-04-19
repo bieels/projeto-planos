@@ -1,16 +1,17 @@
 .promo-container {
-  height: 40vw;
+  /* height: 40vw; */
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--bg-section);
   overflow: hidden;
+  user-select: none;
 }
 .promo-right {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 3rem;
 }
 
@@ -20,26 +21,22 @@
   align-items: center;
   justify-content: center;
   gap: 200px;
-  background: var(--verde-dw);
+  background-image: url(../../../public/img/fundo-promo.jpeg);
+  background-size: cover;
   box-shadow: var(--box-shadow-card);
-  width: 170vh;
-  height: 30vw;
+  width: 90vw;
+  height: 550px;
   border-radius: 10px;
-}
-.promo-btn {
-  background: var(--bg-section);
-  border: none;
-  border-radius: 10px;
-  color: var(--fonte-preta);
-  padding: 15px 30px;
 }
 
+
 .promo-img {
+  width: 30%;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 .promo-text {
-  width: 50vh;
+  width: 30rem;
 }
 
 .promo-title {
@@ -48,4 +45,26 @@
 
 .promo-desc {
   color: var(--fonte-branca);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1366px) {
+  .promo-img{
+    display: none;
+  }
+  .promo-right {
+    text-align: center;
+  }
+  .promo-text{
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .promo-text{
+    width: 80vw;
+  }
+  .promo-desc{
+    font-size: 16px;
+  }
 }

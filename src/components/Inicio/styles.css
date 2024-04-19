@@ -1,12 +1,14 @@
 
 .chamada {
+  height: 80vh;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  background: var(--verde-dw);
+  background-image: url(../../../public/img/fundo-chamada.png);
+  background-size: cover;
+    background-position: center;
   gap: 200px;
-  padding-top: 50px;
   color: var(--fonte-branca);
   text-align: center;
   overflow: hidden;
@@ -20,7 +22,6 @@
   align-items: center;
   flex-direction: column;
   padding: 0 65px 0 65px;
-  margin: 5rem 0 5rem 0;
 }
 .logo img {
   width: 300px;
@@ -52,24 +53,14 @@
   margin: 1rem auto 2.5rem;
 }
 
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1366px) {
   .chamada {
-    gap: 50px;
+    height: 50vh;
   }
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .chamada {
-    background-size: cover;
-
-    overflow: hidden;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .background-chamada {
-    display: none;
+    background: var(--verde-dw);
   }
 }
 

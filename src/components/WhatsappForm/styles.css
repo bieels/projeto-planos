@@ -1,8 +1,8 @@
 /* WhatsAppForm.css */
 
 .WhatsAppForm {
-  width: 400px;
-  height: 550px;
+  width: 900px;
+  height: 500px;
   background-color: var(--bg-card);
   border-radius: 10px;
   box-shadow: var(--box-shadow-card);
@@ -89,7 +89,7 @@
 }
 
 
-.WhatsAppForm button {
+/* .WhatsAppForm button {
   background-color: #2c2c2c;
   color: #fff;
   border: none;
@@ -100,16 +100,16 @@
   transition: background-color 0.3s;
   margin-top: 60px;
   box-shadow: var(--box-shadow-contact);
-}
+} */
 
 .btn-icon {
   margin: 0 5px -5px 0;
 }
 
-.WhatsAppForm button:hover {
+/* .WhatsAppForm button:hover {
   background-color: var(--verde-dw);
   color: #000000;
-}
+} */
 
 @media screen and (max-width:480px) {
   .WhatsAppForm {

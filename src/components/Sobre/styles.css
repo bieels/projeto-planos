@@ -1,9 +1,9 @@
 /* ----- SOBRE ----- */
 
 .sobre {
- height: 50vw;
-  background: var(--verde-dw);
-
+  /* background: var(--verde-dw); */
+  background-image: url(../../../public/img/fundo-promo.jpeg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,6 @@
 
 .sobre-titulo {
   color: white;
-
 }
 
 .sobre-texto {
@@ -42,7 +41,6 @@
 
 .sec-titulo {
   color: white;
-
 }
 .texto-sec {
   color: white;
@@ -58,17 +56,17 @@
   width: 100vw;
   max-width: 400px;
   border-radius: 10px;
-  
+
   box-shadow: var(--box-shadow-card);
-  
+
   margin-bottom: 0.5rem;
   margin-left: 200px;
 }
 
 @media screen and (max-width: 1366px) {
   .sobre {
-  height: 100%;
-}
+    height: 100%;
+  }
 
   .sobre-content {
     flex-direction: column;
@@ -107,7 +105,6 @@
     font-size: 20px;
   }
 
-  
   .sobre-imagem {
     width: 300px;
   }

@@ -1,5 +1,5 @@
 import "./styles.css";
-import { useState, useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AppContext } from "../../context/AppContext";
 import { Link, useLocation } from "react-router-dom";
 import { KeyboardArrowRightRounded, Person2Rounded } from '@mui/icons-material/';
@@ -9,16 +9,7 @@ export default function NavBar() {
   const { scroll } = useContext(AppContext);
   const location = useLocation();
   const isAdminPage = location.pathname === "/admin";
-  const [isNavVisible, setIsNavVisible] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsNavVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsNavVisible(false);
-  };
-
+  
   return (
     <>
    { !isAdminPage && (

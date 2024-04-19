@@ -6,7 +6,6 @@ export const AppProvider = ({ children }) => {
   const [selectedPlan, setSelectedPlan] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [scroll, setScroll] = useState(0);
-  const [isMobile, setIsMobile] = useState();
   const [isActive, setIsActive] = useState(false);
   const selectedTheme = localStorage.getItem("selectedTheme");
   const [modalContent, setModalContent] = useState(null);
@@ -47,22 +46,6 @@ export const AppProvider = ({ children }) => {
     }
   }, [scroll]);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 1366) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <AppContext.Provider
       value={{
@@ -72,7 +55,6 @@ export const AppProvider = ({ children }) => {
         setSelectedPlan,
         scroll,
         setScroll,
-        isMobile,
         isActive,
         setIsActive,
         toggleTheme,
