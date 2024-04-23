@@ -9,10 +9,7 @@ import { useForm } from "react-hook-form";
 import "./styles.css";
 
 export default function CrudPage() {
-  const { register, handleSubmit, reset } = useForm();
-
   const [items, setItems] = useState([]);
-  const [idToEdit, setIdToEdit] = useState("");
   const [showEditModal, setShowEditModal] = useState(false);
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
@@ -20,107 +17,79 @@ export default function CrudPage() {
   const [desc2, setDesc2] = useState("");
   const [desc3, setDesc3] = useState("");
   const [desc4, setDesc4] = useState("");
-  const [appBasico, setAppBasico] = useState(false);
   const [desc5, setDesc5] = useState("");
+  const [appBasico, setAppBasico] = useState(false);
   const [appPremium, setAppPremium] = useState(false);
 
   useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await axios.get(
-          "https://json-server-dw.vercel.app/plans"
-        );
-        setItems(response.data);
-      } catch (error) {
-        console.error("Error fetching data: ", error);
-      }
-    }
-
-    fetchData();
+    // Função para carregar os planos ao carregar a página
+    loadPlans();
   }, []);
 
-  const onSubmit = async (data) => {
+  const loadPlans = async () => {
     try {
-      const newItem = { ...data };
-      const response = await axios.post(
-        "https://json-server-dw.vercel.app/plans",
-        newItem
-      );
-      newItem.id = response.data.id;
-      setItems([...items, newItem]);
-      reset();
+      const response = await axios.get("/api/plans"); // Rota para buscar todos os planos
+      setItems(response.data);
     } catch (error) {
-      console.error("Error creating item: ", error);
+      console.error("Erro ao carregar planos:", error);
     }
   };
 
   const handleEdit = (item) => {
-    setIdToEdit(item.id);
+    // Função para editar um plano
     setTitle(item.title);
     setPrice(item.price);
     setDesc1(item.desc1);
     setDesc2(item.desc2);
     setDesc3(item.desc3);
     setDesc4(item.desc4);
-    setAppBasico(item.appBasico);
     setDesc5(item.desc5);
+    setAppBasico(item.appBasico);
     setAppPremium(item.appPremium);
     setShowEditModal(true);
   };
 
   const handleSaveEdit = async () => {
+    // Função para salvar as alterações feitas em um plano
     try {
-      const updatedItem = {
+      await axios.put(`/api/plans/${id}`, {
         title,
         price,
         desc1,
         desc2,
         desc3,
         desc4,
-        appBasico,
         desc5,
+        appBasico,
         appPremium,
-      };
-      await axios.put(
-        `https://json-server-dw.vercel.app/plans/${idToEdit}`,
-        updatedItem
-      );
-
-      const updatedItems = items.map((item) =>
-        item.id === idToEdit ? { ...item, ...updatedItem } : item
-      );
-
-      setItems(updatedItems);
-      clearForm();
-    } catch (error) {
+      });
       setShowEditModal(false);
+      loadPlans();
+    } catch (error) {
+      console.error("Erro ao salvar edição:", error);
     }
   };
 
   const handleDelete = async () => {
+    // Função para excluir um plano
     try {
-      await axios.delete(`https://json-server-dw.vercel.app/plans/${idToEdit}`);
-      const updatedItems = items.filter((item) => item.id !== idToEdit);
-      setItems(updatedItems);
-      clearForm();
-    } catch (error) {
+      await axios.delete(`/api/plans/${id}`);
       setShowEditModal(false);
+      loadPlans();
+    } catch (error) {
+      console.error("Erro ao excluir plano:", error);
     }
   };
 
-  const clearForm = () => {
-    setIdToEdit("");
-    setTitle("");
-    setPrice("");
-    setDesc1("");
-    setDesc2("");
-    setDesc3("");
-    setDesc4("");
-    setAppBasico(false);
-    setDesc5("");
-    setAppPremium(false);
+  const onSubmit = async (data) => {
+    // Função para criar um novo plano
+    try {
+      await axios.post("/api/plans", data);
+      loadPlans();
+    } catch (error) {
+      console.error("Erro ao criar plano:", error);
+    }
   };
-
   return (
     <section className="crud-page">
       <main id="planos" className="planos">

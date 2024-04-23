@@ -19,7 +19,7 @@ export default function Planos() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://json-server-dw.vercel.app/plans"
+          "/api/plans"
         );
         const plansData = response.data || [];
         setPlans(plansData);
