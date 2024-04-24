@@ -1,9 +1,11 @@
 const mongoose = require("mongoose");
 const Plan = require("../models/Plan");
 
-async function createPlan(title, price, desc1, desc2, desc3, appBasico, appPremium) {
+async function createPlan(req, res) {
+    const { title, price, desc1, desc2, desc3, appBasico, appPremium } = req.body;
+
     try {
-        const newPlan = new Plan({
+        const newPlan = await Plan.create({
             title,
             price,
             desc1,
@@ -12,97 +14,72 @@ async function createPlan(title, price, desc1, desc2, desc3, appBasico, appPremi
             appBasico,
             appPremium
         });
-        const savedPlan = await newPlan.save();
-        console.log("Novo plano criado:", savedPlan);
-        return savedPlan;
+
+        res.status(201).json(newPlan);
     } catch (error) {
         console.error("Erro ao criar plano:", error);
-        throw error;
+        res.status(500).json({ error: 'Internal Server Error' });
     }
 }
 
-// Função para buscar todos os planos
-async function getAllPlans() {
+async function getAllPlans(req, res) {
     try {
         const plans = await Plan.find();
-        console.log("Todos os planos:", plans);
-        return plans;
+        res.status(200).json(plans);
     } catch (error) {
         console.error("Erro ao buscar planos:", error);
-        throw error;
+        res.status(500).json({ error: 'Internal Server Error' });
     }
 }
 
-// Função para buscar um plano pelo ID
-async function getPlanById(planId) {
+async function getPlanById(req, res) {
+    const { id } = req.params;
+
     try {
-        const plan = await Plan.findById(planId);
+        const plan = await Plan.findById(id);
         if (!plan) {
-            console.log("Plano não encontrado");
-            return null;
+            res.status(404).json({ error: 'Plano não encontrado' });
+            return;
         }
-        console.log("Plano encontrado:", plan);
-        return plan;
+        res.status(200).json(plan);
     } catch (error) {
         console.error("Erro ao buscar plano por ID:", error);
-        throw error;
+        res.status(500).json({ error: 'Internal Server Error' });
     }
 }
 
-// Função para atualizar um plano pelo ID
-async function updatePlan(planId, updatedFields) {
+async function updatePlan(req, res) {
+    const { id } = req.params;
+    const updatedFields = req.body;
+
     try {
-        const updatedPlan = await Plan.findByIdAndUpdate(planId, updatedFields, { new: true });
+        const updatedPlan = await Plan.findByIdAndUpdate(id, updatedFields, { new: true });
         if (!updatedPlan) {
-            console.log("Plano não encontrado");
-            return null;
+            res.status(404).json({ error: 'Plano não encontrado' });
+            return;
         }
-        console.log("Plano atualizado:", updatedPlan);
-        return updatedPlan;
+        res.status(200).json(updatedPlan);
     } catch (error) {
         console.error("Erro ao atualizar plano:", error);
-        throw error;
+        res.status(500).json({ error: 'Internal Server Error' });
     }
 }
 
-// Função para excluir um plano pelo ID
-async function deletePlan(planId) {
+async function deletePlan(req, res) {
+    const { id } = req.params;
+
     try {
-        const deletedPlan = await Plan.findByIdAndDelete(planId);
+        const deletedPlan = await Plan.findByIdAndDelete(id);
         if (!deletedPlan) {
-            console.log("Plano não encontrado");
-            return null;
+            res.status(404).json({ error: 'Plano não encontrado' });
+            return;
         }
-        console.log("Plano excluído:", deletedPlan);
-        return deletedPlan;
+        res.status(200).json(deletedPlan);
     } catch (error) {
         console.error("Erro ao excluir plano:", error);
-        throw error;
+        res.status(500).json({ error: 'Internal Server Error' });
     }
 }
-
-// Exemplo de uso
-async function testCrud() {
-    try {
-        // Criar um novo plano
-        const createdPlan = await createPlan("Plano Teste", "R$ 99,99", "Descrição 1", "Descrição 2", "Descrição 3", true, false);
-
-        // Buscar todos os planos
-        const allPlans = await getAllPlans();
-
-        // Buscar um plano pelo ID
-        const planById = await getPlanById(createdPlan._id);
-
-        // Atualizar um plano pelo ID
-        const updatedPlan = await updatePlan(createdPlan._id, { price: "R$ 149,99" });
-
-        // Excluir um plano pelo ID
-        const deletedPlan = await deletePlan(createdPlan._id);
-    } catch (error) {
-        console.error("Erro no teste do CRUD:", error);
-    }
-}
-
 
 module.exports = {
     createPlan,
@@ -110,4 +87,4 @@ module.exports = {
     getPlanById,
     updatePlan,
     deletePlan,
-}
+};

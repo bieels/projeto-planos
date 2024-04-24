@@ -9,4 +9,8 @@ router.get("/", (req, res) => {
     res.send("funfou carai")
 })
 
+router.get("/plans", (req, res) => {
+    res.send("tem planos")
+})
+
 module.exports = router;
