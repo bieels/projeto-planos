@@ -6,7 +6,7 @@ router.use("/api/plans", require("./PlanRoutes"))
 
 //test router
 router.get("/", (req, res) => {
-    res.send("funfou carai")
+    res.send("funcionou porra")
 })
 
 router.get("/plans", (req, res) => {
