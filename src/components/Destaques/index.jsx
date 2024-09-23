@@ -1,9 +1,7 @@
-"use client"
-
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import axios from "axios";
 import { useState, useEffect } from "react";
 import { settingsImage } from "../../utils/carousel";
 import "./styles.css";
@@ -11,22 +9,18 @@ export default function Destaques() {
 
   const [highlights, setHighlights] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("https://json-server-dw.vercel.app/highlights");
-        if (!response.ok) {
-          throw new Error('Erro ao carregar os dados');
-        }
-        const highlightsData = await response.json();
-        setHighlights(highlightsData || []);
-      } catch (error) {
-        console.error('Erro ao carregar os dados:', error);
-      }
-    };
-    fetchData();
-  }, []);
-  
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("https://json-server-dw.vercel.app/highlights");
+      const highlightsData = response.data || [];
+      setHighlights(highlightsData);
+    } catch (error) {
+      console.error('Erro ao carregar os dados:', error);
+    }
+  };
+  fetchData();
+}, []);
 
   return (
     <>
@@ -42,6 +36,7 @@ export default function Destaques() {
               </a>
             ))}
           </Slider>
+        {/* <a href="#" className="destaques-botao botao">Receber destaques por email</a> */}
       </section>
     </>
   );

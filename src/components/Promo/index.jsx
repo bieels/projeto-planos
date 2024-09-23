@@ -1,5 +1,3 @@
-"use client"
-
 import "./styles.css";
 import { AppContext } from "../../context/AppContext";
 import { useContext } from "react";
@@ -17,7 +15,7 @@ export default function Promo() {
           <h2 className="promo-title">Roteador em Comodato</h2>
           <p className="promo-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa pariatur perspiciatis eos reiciendis rerum accusamus fuga nobis dolorum itaque vitae quisquam ipsum, minima sequi ipsa in sed vero maxime!</p>
         </div>
-          <button className="button" onClick={() => {setShowModal(true); setModalContent(<WhatsAppForm />)}}><WhatsApp className="whatsapp-icon"/> Falar com Atendente</button>
+          <button className="button promo-button" onClick={() => {setShowModal(true); setModalContent(<WhatsAppForm />)}}><WhatsApp className="whatsapp-icon"/> Falar com Atendente</button>
        </div>
       </div>
     </div>

@@ -19,9 +19,9 @@
 .promo-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 200px;
-  background-image: url(../../../public/img/fundo-promo.jpeg);
+  justify-content: space-around;
+  gap: 10%;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iYm9yZGVyIHNoYWRvdy1tZCIgdmlld0JveD0iMCAwIDEzNTEuNjggNjc1Ljg0IiBzdHlsZT0id2lkdGg6IDEzNTEuNjhweDsgaGVpZ2h0OiA2NzUuODRweDsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PHJlY3QgY2xhc3M9ImJnIiBpZD0iYmciIHg9IjAiIHk9IjAiIHdpZHRoPSIxMzUxLjY4IiBoZWlnaHQ9IjY3NS44NCIgZmlsbD0iI2M3YzdjNyI+PC9yZWN0PjxjaXJjbGUgY3g9IjIwMjcuNTIiIGN5PSIzMzcuOTIiIHI9IjEzNTEuNjgiIGZpbGw9IiMxNzE3MTciIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxMCI+PC9jaXJjbGU+PC9zdmc+');
   background-size: cover;
   box-shadow: var(--box-shadow-card);
   width: 90vw;
@@ -40,12 +40,21 @@
 }
 
 .promo-title {
- color: var(--fonte-branca);
+ color: white;
 }
 
 .promo-desc {
-  color: var(--fonte-branca);
+  color: white;
   font-weight: 500;
+}
+
+.promo-button {
+  color: white;
+  border: 1px solid white;
+}
+
+.promo-button:hover {
+  box-shadow: 0.25rem 0.25rem white;
 }
 
 @media screen and (max-width: 1366px) {

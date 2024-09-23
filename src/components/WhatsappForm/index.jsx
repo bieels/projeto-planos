@@ -1,5 +1,3 @@
-"use client"
-
 import React, { useState } from "react";
 import "./styles.css";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";

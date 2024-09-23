@@ -21,7 +21,7 @@ export function SamplePrevArrow(props) {
 }
 
 export const settingsImage = {
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 3,

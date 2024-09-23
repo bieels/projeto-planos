@@ -1,4 +1,3 @@
-"use client"
 import React, { useState, useContext } from "react";
 import { AppContext } from "../../context/AppContext";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
@@ -24,9 +23,9 @@ export default function BotaoTopo() {
           <div className="floating-btn">
             <button className={scroll > 100 ? "dark-mode-button" : "dark-mode-button hiddenbtn"} onClick={toggleTheme}>
         {isActive ? (
-          <Sun sx={{ color: "#ffffff" }} className="icon" />
+          <Sun sx={{ color: "var(--fonte-branca)" }} className="icon" />
         ) : (
-          <Moon sx={{ color: "#3b3b3b" }} className="icon" />
+          <Moon sx={{ color: "var(--fonte-branca)" }} className="icon" />
         )}
       </button>
         <button className={scroll > 100 ?  "back-to-top-button" : "back-to-top-button hiddenbtn"} onClick={scrollToTop}>
