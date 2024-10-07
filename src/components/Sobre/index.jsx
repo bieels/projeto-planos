@@ -1,30 +1,14 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
 import "./styles.css";
 
 export default function Sobre() {
-  const [about, setAbout] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "https://json-server-dw.vercel.app/about"
-        );
-        const aboutData = response.data || [];
-        setAbout(aboutData);
-      } catch (error) {
-        console.error("Erro ao carregar os dados:", error);
-      }
-    };
-    fetchData();
-  }, []);
+
 
   return (
     <>
       <section id="empresa" className="sobre">
         <div className="sobre-container">
-        <div key={about.id} className="sobre-content">
+        <div  className="sobre-content">
           <article>
             <h2 className="sobre-titulo">Somos o Provedor mais rápido da Cidade!</h2>
             <p className="sobre-texto">

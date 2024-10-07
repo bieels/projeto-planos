@@ -31,7 +31,7 @@
 }
 .logo img {
   filter: var(--invert);
-  width: 150px;
+  width: 40%;
   padding: 2rem 2rem;
   transition: all 300ms ease-in-out;
 }
@@ -55,25 +55,26 @@
 
 .chamada-texto {
   color: var(--fonte-branca);
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   line-height: normal;
 
   margin: 1rem auto 2.5rem;
 }
 
 @media screen and (max-width: 1366px) {
-  .chamada {
-    height: 50vh;
-  }
+
 }
 @media screen and (max-width: 900px) {
-  .chamada {
-    /* background: var(--verde-dw); */
-  }
 }
 
 @media screen and (max-width: 480px) {
+  .chamada {
+    background: var(--background-img-1);
+  }
   .chamada-titulo {
     font-size: 1.5rem;
+  }
+  .chamada-texto {
+    font-size: 1rem;
   }
 }

@@ -11,13 +11,9 @@
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
   transition: transform 0.45s ease, background 0.45s ease;
+  user-select: none;
 }
 .planos-titulo {
-  color: var(--fonte-titulo);
-  font-weight: 700;
-  font-size: 2.5rem;
-  font-family: var(--montserrat);
-  text-transform: uppercase;
   text-align: center;
   padding: 0 0 10rem 0;
 }

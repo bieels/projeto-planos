@@ -131,9 +131,9 @@ l-125 0 0 80 0 80 110 0 c103 0 110 1 110 20 0 19 -7 20 -110 20 l-110 0 0 73
               <img src={logo} alt="" />
             </a>
             <h1 className="chamada-titulo">
-              Seja Bem Vindo!
+              Seja Bem Vindo
             </h1>
-            <p className="chamada-texto">A melhor Banda Larga!</p>
+            <p className="chamada-texto">A BANDA LARGA DO FUTURO!</p>
             <a href="#plans" className="chamada-botao button">
               Conheça os planos
             </a>

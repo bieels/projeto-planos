@@ -25,19 +25,19 @@
 }
 
 .contato p {
-  color: var(--fonte-titulo);
+  color: var(--fonte-branca);
 }
 
 .contato .button {
-  color: var(--fonte-titulo);
+  color: var(--fonte-branca);
   padding: 10px;
   margin: 10px;
   border-radius: 50%;
-  border: 1px solid var(--fonte-titulo);
+  border: 1px solid var(--fonte-branca);
 }
 
 .contato .button:hover {
-  box-shadow: 0.25rem 0.25rem var(--fonte-titulo);
+  box-shadow: 0.25rem 0.25rem var(--fonte-branca);
 }
 
 .contato-item:hover .contato-icon {
@@ -60,7 +60,7 @@
 }
 
 .social-title {
-  color: var(--fonte-titulo);
+  color: var(--fonte-branca);
   font-weight: 700;
   font-size: 1.5rem;
   font-family: var(--montserrat);

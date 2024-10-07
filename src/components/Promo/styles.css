@@ -17,11 +17,12 @@
 
 
 .promo-content {
+  margin: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 10%;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iYm9yZGVyIHNoYWRvdy1tZCIgdmlld0JveD0iMCAwIDEzNTEuNjggNjc1Ljg0IiBzdHlsZT0id2lkdGg6IDEzNTEuNjhweDsgaGVpZ2h0OiA2NzUuODRweDsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PHJlY3QgY2xhc3M9ImJnIiBpZD0iYmciIHg9IjAiIHk9IjAiIHdpZHRoPSIxMzUxLjY4IiBoZWlnaHQ9IjY3NS44NCIgZmlsbD0iI2M3YzdjNyI+PC9yZWN0PjxjaXJjbGUgY3g9IjIwMjcuNTIiIGN5PSIzMzcuOTIiIHI9IjEzNTEuNjgiIGZpbGw9IiMxNzE3MTciIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxMCI+PC9jaXJjbGU+PC9zdmc+');
+  background-image: url('/img/split_background.svg');
   background-size: cover;
   box-shadow: var(--box-shadow-card);
   width: 90vw;
@@ -58,10 +59,14 @@
 }
 
 @media screen and (max-width: 1366px) {
+  .promo-content {
+    background: var(--background-img-1);
+  }  
   .promo-img{
     display: none;
   }
   .promo-right {
+    align-items: center;
     text-align: center;
   }
   .promo-text{
